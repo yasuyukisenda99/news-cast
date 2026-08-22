@@ -18,7 +18,8 @@ podcast:
 
 news:
   hours_back: 48
-  max_articles: 10
+  max_articles: 15
+  google_news_locale: "en"
 
   google_news_queries:
     - "HubSpot AI"
@@ -34,7 +35,7 @@ news:
     - "電子部品 業界"
     - "FA 産業機器"
 
-    rss_feeds:
+  rss_feeds:
     - "https://martech.org/feed/"
     - "https://searchengineland.com/feed"
     - "https://rsshub.app/deeplearning/the-batch"
