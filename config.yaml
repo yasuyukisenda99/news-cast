@@ -12,13 +12,13 @@ podcast:
   base_url: "https://yasuyukisenda99.github.io/news-cast"
   language: "ja"
   # 1エピソードの目安の長さ（分）
-  episode_minutes: 6
+  episode_minutes: 10
   # 保持するエピソード数（古いMP3は自動削除してリポジトリ肥大化を防ぐ）
   keep_episodes: 14
 
 news:
-  hours_back: 24
-  max_articles: 12
+  hours_back: 48
+  max_articles: 10
 
   google_news_queries:
     - "HubSpot AI"
@@ -34,9 +34,12 @@ news:
     - "電子部品 業界"
     - "FA 産業機器"
 
-  rss_feeds: []
-  #  - "https://rss.itmedia.co.jp/rss/2.0/eetimes.xml"   # 例: EE Times Japan（URLは要確認）
-  #  - "https://rss.itmedia.co.jp/rss/2.0/monoist.xml"   # 例: MONOist（URLは要確認）
+    rss_feeds:
+    - "https://martech.org/feed/"
+    - "https://searchengineland.com/feed"
+    - "https://rsshub.app/deeplearning/the-batch"
+    - "https://techcrunch.com/category/artificial-intelligence/feed/"
+    - "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
 
 gemini:
   # 台本生成用モデル（上から順に試行し、使えるものを利用）
