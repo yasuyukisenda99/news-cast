@@ -9,7 +9,7 @@ podcast:
   author: "news-cast bot"
   # GitHub Pages の公開URLに書き換えてください（末尾スラッシュなし）
   # 例: https://your-github-id.github.io/news-cast
-  base_url: "https://YOUR_GITHUB_ID.github.io/news-cast"
+  base_url: "https://yasuyukisenda99.github.io/news-cast"
   language: "ja"
   # 1エピソードの目安の長さ（分）
   episode_minutes: 6
