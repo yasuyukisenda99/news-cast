@@ -1,0 +1,43 @@
+name: daily-podcast
+
+on:
+  schedule:
+    # 毎日 22:00 UTC = 日本時間 朝7:00（GitHubのcronは数分〜数十分遅延することがあります）
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}   # 手動実行ボタンも有効化
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-podcast
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate today's episode
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python src/generate_podcast.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "news-cast-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet || git commit -m "🎙️ episode $(TZ=Asia/Tokyo date +%F)"
+          git push
