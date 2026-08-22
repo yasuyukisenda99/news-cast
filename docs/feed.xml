@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>朝のAI・業界ニュース便</title>
+    <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
+    <link>https://yasuyukisenda99.github.io/news-cast/</link>
+    <language>ja</language>
+    <lastBuildDate>Sat, 22 Aug 2026 10:26:30 +0000</lastBuildDate>
+    <itunes:author>news-cast bot</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI検索対策やマッチングの最新トレンドを解説！【2026年08月22日（Sat）】</title>
+      <description>2026年8月22日配信。AI検索マーケティングの最前線、AIによるクリエイター選定プラットフォーム、ChatGPTを用いた画像生成と著作権セミナーなど、今知りたいAIビジネスニュースを深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-22.mp3" length="3670605" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-08-22.mp3</guid>
+      <pubDate>Sat, 22 Aug 2026 19:24:21 +0900</pubDate>
+      <itunes:duration>05:05</itunes:duration>
+    </item>
+  </channel>
+</rss>
