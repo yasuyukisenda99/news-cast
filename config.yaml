@@ -65,4 +65,4 @@ gemini:
       voice: "Puck"
       persona: "明るくテンポの良い男性ホスト。リスナー目線の素朴な疑問を投げる"
   # TTSに1回で渡す台本の最大文字数（長い台本は分割して結合します）
-  tts_chunk_chars: 3500
+  tts_chunk_chars: 800
