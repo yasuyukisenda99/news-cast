@@ -5,17 +5,17 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 22 Aug 2026 10:26:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 11:26:19 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>AI検索対策やマッチングの最新トレンドを解説！【2026年08月22日（Sat）】</title>
-      <description>2026年8月22日配信。AI検索マーケティングの最前線、AIによるクリエイター選定プラットフォーム、ChatGPTを用いた画像生成と著作権セミナーなど、今知りたいAIビジネスニュースを深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-22.mp3" length="3670605" type="audio/mpeg"/>
+      <title>朝のAI・業界ニュース便 2026年08月22日（Sat）</title>
+      <description>Anthropicのセーフガード検証、Nvidiaが提示する「ハーネス」重要論、米司法省によるa16z調査など、最新テクノロジー＆ビジネスニュースをお届けします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-22.mp3" length="6669261" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-08-22.mp3</guid>
-      <pubDate>Sat, 22 Aug 2026 19:24:21 +0900</pubDate>
-      <itunes:duration>05:05</itunes:duration>
+      <pubDate>Sat, 22 Aug 2026 20:22:15 +0900</pubDate>
+      <itunes:duration>09:15</itunes:duration>
     </item>
   </channel>
 </rss>
