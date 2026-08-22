@@ -1,0 +1,59 @@
+# ============================================================
+# news-cast 設定ファイル
+# 毎朝の業界ニュースを2人対話のポッドキャストに変換するパイプライン
+# ============================================================
+
+podcast:
+  title: "朝の業界ニュース便"
+  description: "電子部品・産業機器業界の最新ニュースを、AIホスト2人が毎朝コンパクトにお届けします。"
+  author: "news-cast bot"
+  # GitHub Pages の公開URLに書き換えてください（末尾スラッシュなし）
+  # 例: https://your-github-id.github.io/news-cast
+  base_url: "https://YOUR_GITHUB_ID.github.io/news-cast"
+  language: "ja"
+  # 1エピソードの目安の長さ（分）
+  episode_minutes: 6
+  # 保持するエピソード数（古いMP3は自動削除してリポジトリ肥大化を防ぐ）
+  keep_episodes: 14
+
+news:
+  # 何時間前までの記事を対象にするか
+  hours_back: 24
+  # 台本に含める最大記事数
+  max_articles: 12
+  # Google News のRSS検索に使うキーワード（自由に編集OK）
+  google_news_queries:
+    - "電子部品 業界"
+    - "半導体 市況"
+    - "FA 産業機器"
+    - "生成AI 検索 マーケティング"
+  # 特定メディアのRSSフィードを直接追加する場合はここに
+  # URLは各メディアのRSS配信ページで確認してください
+  rss_feeds: []
+  #  - "https://rss.itmedia.co.jp/rss/2.0/eetimes.xml"   # 例: EE Times Japan（URLは要確認）
+  #  - "https://rss.itmedia.co.jp/rss/2.0/monoist.xml"   # 例: MONOist（URLは要確認）
+
+gemini:
+  # 台本生成用モデル（上から順に試行し、使えるものを利用）
+  script_models:
+    - "gemini-2.5-flash"
+    - "gemini-2.5-pro"
+    - "gemini-2.0-flash"
+  # 音声合成（TTS）用モデル（上から順に試行）
+  tts_models:
+    - "gemini-2.5-flash-preview-tts"
+    - "gemini-3.1-flash-tts-preview"
+    - "gemini-2.5-pro-preview-tts"
+  # 2人のホスト設定。voice はGeminiのプリビルド音声名
+  # （Kore / Puck / Zephyr / Charon / Leda / Orus / Aoede など）
+  hosts:
+    - speaker: "Aki"      # 台本内のラベル（半角英字推奨）
+      display: "アキ"      # 会話内で呼び合う名前
+      voice: "Kore"
+      persona: "落ち着いた知的な女性ホスト。要点を整理して伝えるのが得意"
+    - speaker: "Haru"
+      display: "ハル"
+      voice: "Puck"
+      persona: "明るくテンポの良い男性ホスト。リスナー目線の素朴な疑問を投げる"
+  # TTSに1回で渡す台本の最大文字数（長い台本は分割して結合します）
+  tts_chunk_chars: 3500
