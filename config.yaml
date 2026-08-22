@@ -4,8 +4,8 @@
 # ============================================================
 
 podcast:
-  title: "朝の業界ニュース便"
-  description: "電子部品・産業機器業界の最新ニュースを、AIホスト2人が毎朝コンパクトにお届けします。"
+  title: "朝のAI・業界ニュース便"
+  description: "AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。"
   author: "news-cast bot"
   # GitHub Pages の公開URLに書き換えてください（末尾スラッシュなし）
   # 例: https://your-github-id.github.io/news-cast
@@ -17,18 +17,23 @@ podcast:
   keep_episodes: 14
 
 news:
-  # 何時間前までの記事を対象にするか
   hours_back: 24
-  # 台本に含める最大記事数
   max_articles: 12
-  # Google News のRSS検索に使うキーワード（自由に編集OK）
+
   google_news_queries:
-    - "電子部品 業界"
-    - "半導体 市況"
-    - "FA 産業機器"
+    - "HubSpot AI"
+    - "HubSpot AEO"
+    - "HubSpot Breeze"
+    - "HubSpot Agent Hub"
+    - "AI エージェント マーケティング"
+    - "MCP CRM marketing"
+    - "AEO AI検索"
     - "生成AI 検索 マーケティング"
-  # 特定メディアのRSSフィードを直接追加する場合はここに
-  # URLは各メディアのRSS配信ページで確認してください
+    - "GEO generative engine optimization"
+    - "B2B マーケティング AI"
+    - "電子部品 業界"
+    - "FA 産業機器"
+
   rss_feeds: []
   #  - "https://rss.itmedia.co.jp/rss/2.0/eetimes.xml"   # 例: EE Times Japan（URLは要確認）
   #  - "https://rss.itmedia.co.jp/rss/2.0/monoist.xml"   # 例: MONOist（URLは要確認）
