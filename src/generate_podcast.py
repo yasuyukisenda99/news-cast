@@ -72,10 +72,14 @@ def collect_news(cfg: dict) -> list[dict]:
     cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=news_cfg["hours_back"])
 
     feed_urls: list[str] = []
+    locale = news_cfg.get("google_news_locale", "en")
+    params = (
+        "hl=ja&gl=JP&ceid=JP:ja" if locale == "ja"
+        else "hl=en-US&gl=US&ceid=US:en"
+    )
     for q in news_cfg.get("google_news_queries", []):
         feed_urls.append(
-            "https://news.google.com/rss/search?q="
-            f"{quote(q)}&hl=ja&gl=JP&ceid=JP:ja"
+            f"https://news.google.com/rss/search?q={quote(q)}&{params}"
         )
     feed_urls.extend(news_cfg.get("rss_feeds", []) or [])
 
