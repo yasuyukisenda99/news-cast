@@ -51,6 +51,7 @@ gemini:
   # 音声合成（TTS）用モデル（上から順に試行）
   tts_models:
     - "gemini-3.1-flash-tts-preview"
+    - "gemini-2.5-flash-preview-tts"
   # 2人のホスト設定。voice はGeminiのプリビルド音声名
   # （Kore / Puck / Zephyr / Charon / Leda / Orus / Aoede など）
   hosts:
