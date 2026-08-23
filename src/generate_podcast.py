@@ -143,13 +143,16 @@ def _gemini_call(model: str, body: dict, api_key: str, timeout: int = 300) -> di
 def gemini_with_fallback(models: list[str], body: dict, api_key: str) -> dict:
     last_err: Exception | None = None
     for model in models:
-        for attempt in range(2):
+        for attempt in range(5):
             try:
                 return _gemini_call(model, body, api_key)
             except Exception as e:
                 last_err = e
+                wait = min(10 * 2 ** attempt, 120)
                 log(f"モデル {model} で失敗（試行{attempt + 1}）: {e}")
-                time.sleep(5)
+                if attempt < 4:
+                    log(f"  {wait}秒待って再試行します")
+                    time.sleep(wait)
     raise RuntimeError(f"全モデルで生成に失敗しました: {last_err}")
 
 
