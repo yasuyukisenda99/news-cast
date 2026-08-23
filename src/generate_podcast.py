@@ -300,7 +300,8 @@ def pcm_to_mp3(pcm: bytes, out_path: Path) -> None:
     subprocess.run(
         [
             "ffmpeg", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1",
-            "-i", "pipe:0", "-codec:a", "libmp3lame", "-b:a", "96k",
+            "-i", "pipe:0", "-af", "dynaudnorm=f=150:g=9:m=30:p=0.9",
+            "-codec:a", "libmp3lame", "-b:a", "96k",
             str(out_path),
         ],
         input=pcm,
