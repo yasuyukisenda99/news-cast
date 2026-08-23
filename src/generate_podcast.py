@@ -250,7 +250,7 @@ def _split_script(script: str, chunk_chars: int) -> list[str]:
     return chunks
 
 
-def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
+def (cfg: dict, script: str, api_key: str) -> bytes:
     gem = cfg["gemini"]
     hosts = gem["hosts"]
     speaker_configs = [
@@ -260,11 +260,17 @@ def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
         }
         for h in hosts
     ]
+    directions = "／".join(
+        f"{h['speaker']}は{h.get('voice_direction', h['persona'])}"
+        for h in hosts
+    )
     style = (
-        "以下は朝のニュースPodcastの台本です。"
-        f"{hosts[0]['speaker']}は{hosts[0]['persona']}、"
-        f"{hosts[1]['speaker']}は{hosts[1]['persona']}。"
-        "自然な日本語の掛け合いとして、テンポよく読み上げてください。\n\n"
+        "以下は毎朝配信されるニュースPodcastの台本の一部です。"
+        "番組は全編を通じて同じ2人が、同じスタジオ・同じマイクで収録しています。"
+        "声の高さ、話す速度、声量、マイクとの距離感を最初から最後まで完全に一定に保ってください。"
+        "感情を誇張せず、抑制の効いた落ち着いた一定のトーンで、"
+        "ニュース番組のアナウンサーのように読み上げてください。\n"
+        f"話者の演出指示: {directions}\n\n"
     )
 
     chunks = _split_script(script, gem["tts_chunk_chars"])
@@ -277,6 +283,7 @@ def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
             "contents": [{"parts": [{"text": style + chunk}]}],
             "generationConfig": {
                 "responseModalities": ["AUDIO"],
+                "temperature": gem.get("tts_temperature", 0.2),
                 "speechConfig": {
                     "multiSpeakerVoiceConfig": {
                         "speakerVoiceConfigs": speaker_configs
