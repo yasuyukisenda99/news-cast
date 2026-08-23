@@ -5,17 +5,17 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 22 Aug 2026 22:26:46 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 00:44:23 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>朝のAI・業界ニュース便 2026年08月23日（Sun）</title>
-      <description>ハーバードのAIアバター講師や科学研究を自動再現する「Faraday」、AI規制の最新動向から宇宙データセンターの資金調達まで、今押さえるべきAI・ITニュースをお届けします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-23.mp3" length="6465069" type="audio/mpeg"/>
+      <title>朝のAI・業界ニュース便 - 2026年08月23日（Sun）</title>
+      <description>2026年8月23日の最新ニュースをお届け。科学論文を再現する新AIエージェントの衝撃、AI安全規制をめぐる各社の動き、さらに米司法省による大手VC調査やAEO/GEOの最新トレンドまで詳しく解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-23.mp3" length="6564141" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-08-23.mp3</guid>
-      <pubDate>Sun, 23 Aug 2026 07:23:25 +0900</pubDate>
-      <itunes:duration>08:58</itunes:duration>
+      <pubDate>Sun, 23 Aug 2026 09:34:16 +0900</pubDate>
+      <itunes:duration>09:06</itunes:duration>
     </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年08月22日（Sat）</title>
