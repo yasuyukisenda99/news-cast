@@ -141,6 +141,7 @@ def _gemini_call(model: str, body: dict, api_key: str, timeout: int = 300) -> di
 
 
 def gemini_with_fallback(models: list[str], body: dict, api_key: str) -> dict:
+    """503（混雑）などに備え、待ち時間を倍にしながら粘り強く再試行する"""
     last_err: Exception | None = None
     for model in models:
         for attempt in range(8):
@@ -250,7 +251,7 @@ def _split_script(script: str, chunk_chars: int) -> list[str]:
     return chunks
 
 
-def (cfg: dict, script: str, api_key: str) -> bytes:
+def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
     gem = cfg["gemini"]
     hosts = gem["hosts"]
     speaker_configs = [
@@ -260,6 +261,7 @@ def (cfg: dict, script: str, api_key: str) -> bytes:
         }
         for h in hosts
     ]
+    # チャンクをまたいでも同じ演技になるよう、収録状況ごと固定して指示する
     directions = "／".join(
         f"{h['speaker']}は{h.get('voice_direction', h['persona'])}"
         for h in hosts
@@ -306,7 +308,7 @@ def (cfg: dict, script: str, api_key: str) -> bytes:
 
 
 def pcm_to_mp3(pcm: bytes, out_path: Path) -> None:
-    """Gemini TTSの出力（s16le / 24kHz / mono）をMP3に変換"""
+    """Gemini TTSの出力（s16le / 24kHz / mono）を音量を均一化しつつMP3に変換"""
     subprocess.run(
         [
             "ffmpeg", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1",
