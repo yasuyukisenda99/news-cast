@@ -51,8 +51,6 @@ gemini:
   # 音声合成（TTS）用モデル（上から順に試行）
   tts_models:
     - "gemini-3.1-flash-tts-preview"
-    - "gemini-2.5-flash-tts"
-    - "gemini-2.5-pro-tts"
   # 2人のホスト設定。voice はGeminiのプリビルド音声名
   # （Kore / Puck / Zephyr / Charon / Leda / Orus / Aoede など）
   hosts:
@@ -65,4 +63,4 @@ gemini:
       voice: "Puck"
       persona: "明るくテンポの良い男性ホスト。リスナー目線の素朴な疑問を投げる"
   # TTSに1回で渡す台本の最大文字数（長い台本は分割して結合します）
-  tts_chunk_chars: 800
+  tts_chunk_chars: 1200
