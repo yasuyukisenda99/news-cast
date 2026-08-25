@@ -35,6 +35,23 @@ META_PATH = DOCS_DIR / "episodes.json"
 JST = dt.timezone(dt.timedelta(hours=9))
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 
+# 再試行しても回復が見込めるHTTPステータス（サーバー側の一時的な不調）
+RETRYABLE_STATUS = {500, 502, 503, 504}
+MAX_ATTEMPTS = 5
+
+
+class GeminiError(RuntimeError):
+    """Gemini APIがエラーを返したときの例外（HTTPステータスを保持する）"""
+
+    def __init__(self, model: str, status: int, detail: str):
+        self.model = model
+        self.status = status
+        super().__init__(f"{model}: HTTP {status} {detail}")
+
+
+class QuotaExceeded(RuntimeError):
+    """APIの利用枠を使い切ったときの例外"""
+
 
 # ----------------------------------------------------------------------------
 # 共通ユーティリティ
@@ -136,24 +153,49 @@ def _gemini_call(model: str, body: dict, api_key: str, timeout: int = 300) -> di
         timeout=timeout,
     )
     if resp.status_code != 200:
-        raise RuntimeError(f"{model}: HTTP {resp.status_code} {resp.text[:300]}")
+        raise GeminiError(model, resp.status_code, resp.text[:300])
     return resp.json()
 
 
 def gemini_with_fallback(models: list[str], body: dict, api_key: str) -> dict:
-    """503（混雑）などに備え、待ち時間を倍にしながら粘り強く再試行する"""
+    """モデルを順に試す。
+
+    503などの一時的な混雑のときだけ待って再試行し、
+    429（利用枠の超過）や404（モデル不在）のように待っても直らないものは
+    即座に打ち切る。無駄な再試行で利用枠を消費しないための設計。
+    """
     last_err: Exception | None = None
     for model in models:
-        for attempt in range(8):
+        for attempt in range(MAX_ATTEMPTS):
             try:
                 return _gemini_call(model, body, api_key)
-            except Exception as e:
+            except GeminiError as e:
                 last_err = e
-                wait = min(10 * 2 ** attempt, 120)
-                log(f"モデル {model} で失敗（試行{attempt + 1}）: {e}")
-                if attempt < 7:
-                    log(f"  {wait}秒待って再試行します")
-                    time.sleep(wait)
+                if e.status == 429:
+                    log(f"モデル {model}: 利用枠の上限に達しました。再試行しません")
+                    break
+                if e.status not in RETRYABLE_STATUS:
+                    log(f"モデル {model}: 回復不能なエラー（HTTP {e.status}）。次のモデルへ")
+                    log(f"  詳細: {e}")
+                    break
+                if attempt == MAX_ATTEMPTS - 1:
+                    log(f"モデル {model}: {MAX_ATTEMPTS}回試しましたが混雑が続いています。次のモデルへ")
+                    break
+                wait = min(10 * 2 ** attempt, 60)
+                log(f"モデル {model} が混雑中（試行{attempt + 1}）。{wait}秒待って再試行します")
+                time.sleep(wait)
+            except Exception as e:  # ネットワーク断など
+                last_err = e
+                if attempt == MAX_ATTEMPTS - 1:
+                    break
+                log(f"モデル {model} で通信エラー（試行{attempt + 1}）: {e}")
+                time.sleep(min(10 * 2 ** attempt, 60))
+
+    if isinstance(last_err, GeminiError) and last_err.status == 429:
+        raise QuotaExceeded(
+            "APIの利用枠を使い切りました。日付が変わればリセットされます。"
+            "残量は https://ai.dev/rate-limit で確認できます"
+        )
     raise RuntimeError(f"全モデルで生成に失敗しました: {last_err}")
 
 
@@ -447,6 +489,15 @@ def main() -> int:
 
     EPISODES_DIR.mkdir(parents=True, exist_ok=True)
 
+    try:
+        return _run(cfg, api_key, args)
+    except QuotaExceeded as e:
+        log(f"中止: {e}")
+        log("本日はここで終了します。明日の自動実行をお待ちください")
+        return 1
+
+
+def _run(cfg: dict, api_key: str, args) -> int:
     articles = collect_news(cfg)
     if not articles:
         log("対象期間内の記事が見つかりませんでした。本日はスキップします")
