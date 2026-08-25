@@ -53,6 +53,10 @@ class QuotaExceeded(RuntimeError):
     """APIの利用枠を使い切ったときの例外"""
 
 
+class InvalidResponse(RuntimeError):
+    """通信は成功したが、応答の中身が期待した形でないときの例外（再試行対象）"""
+
+
 # ----------------------------------------------------------------------------
 # 共通ユーティリティ
 # ----------------------------------------------------------------------------
@@ -145,7 +149,7 @@ def collect_news(cfg: dict) -> list[dict]:
 # 2. Gemini API 呼び出し（REST・モデルフォールバック付き）
 # ----------------------------------------------------------------------------
 
-def _gemini_call(model: str, body: dict, api_key: str, timeout: int = 300) -> dict:
+def _gemini_call(model: str, body: dict, api_key: str, timeout: int = 600) -> dict:
     resp = requests.post(
         f"{GEMINI_BASE}/{model}:generateContent",
         headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
@@ -157,7 +161,9 @@ def _gemini_call(model: str, body: dict, api_key: str, timeout: int = 300) -> di
     return resp.json()
 
 
-def gemini_with_fallback(models: list[str], body: dict, api_key: str) -> dict:
+def gemini_with_fallback(
+    models: list[str], body: dict, api_key: str, validate=None
+) -> dict:
     """モデルを順に試す。
 
     503などの一時的な混雑のときだけ待って再試行し、
@@ -168,7 +174,16 @@ def gemini_with_fallback(models: list[str], body: dict, api_key: str) -> dict:
     for model in models:
         for attempt in range(MAX_ATTEMPTS):
             try:
-                return _gemini_call(model, body, api_key)
+                response = _gemini_call(model, body, api_key)
+                if validate is not None:
+                    validate(response)
+                return response
+            except InvalidResponse as e:
+                last_err = e
+                log(f"モデル {model}: 応答が不正（試行{attempt + 1}）: {e}")
+                if attempt == MAX_ATTEMPTS - 1:
+                    break
+                time.sleep(min(10 * 2 ** attempt, 60))
             except GeminiError as e:
                 last_err = e
                 if e.status == 429:
@@ -200,8 +215,19 @@ def gemini_with_fallback(models: list[str], body: dict, api_key: str) -> dict:
 
 
 def _extract_text(response: dict) -> str:
-    parts = response["candidates"][0]["content"]["parts"]
-    return "".join(p.get("text", "") for p in parts)
+    candidates = response.get("candidates") or []
+    if not candidates:
+        block = response.get("promptFeedback", {}).get("blockReason", "不明")
+        raise InvalidResponse(f"候補が空です（blockReason={block}）")
+    cand = candidates[0]
+    content = cand.get("content")
+    if not content or not content.get("parts"):
+        reason = cand.get("finishReason", "不明")
+        raise InvalidResponse(f"本文が含まれていません（finishReason={reason}）")
+    text = "".join(p.get("text", "") for p in content["parts"])
+    if not text.strip():
+        raise InvalidResponse("本文が空でした")
+    return text
 
 
 # ----------------------------------------------------------------------------
@@ -257,7 +283,9 @@ def build_script(cfg: dict, articles: list[dict], api_key: str) -> dict:
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json"},
     }
-    response = gemini_with_fallback(cfg["gemini"]["script_models"], body, api_key)
+    response = gemini_with_fallback(
+        cfg["gemini"]["script_models"], body, api_key, validate=_extract_text
+    )
     text = _extract_text(response)
 
     try:
@@ -291,6 +319,26 @@ def _split_script(script: str, chunk_chars: int) -> list[str]:
     if current:
         chunks.append(current)
     return chunks
+
+
+def _extract_audio(response: dict) -> str:
+    """音声応答からbase64データを取り出す。取り出せなければ再試行対象の例外"""
+    candidates = response.get("candidates") or []
+    if not candidates:
+        block = response.get("promptFeedback", {}).get("blockReason", "不明")
+        raise InvalidResponse(f"候補が空です（blockReason={block}）")
+
+    cand = candidates[0]
+    reason = cand.get("finishReason", "")
+    content = cand.get("content")
+    if not content or not content.get("parts"):
+        raise InvalidResponse(f"音声が含まれていません（finishReason={reason or '不明'}）")
+
+    for part in content["parts"]:
+        data = part.get("inlineData", {}).get("data")
+        if data:
+            return data
+    raise InvalidResponse(f"inlineDataが見つかりません（finishReason={reason or '不明'}）")
 
 
 def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
@@ -335,13 +383,10 @@ def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
                 },
             },
         }
-        response = gemini_with_fallback(gem["tts_models"], body, api_key)
-        parts = response["candidates"][0]["content"]["parts"]
-        data = next(
-            (p["inlineData"]["data"] for p in parts if "inlineData" in p), None
+        response = gemini_with_fallback(
+            gem["tts_models"], body, api_key, validate=_extract_audio
         )
-        if not data:
-            raise RuntimeError(f"チャンク{i}: 音声データが返りませんでした")
+        data = _extract_audio(response)
         if pcm:
             pcm += silence
         pcm += base64.b64decode(data)
