@@ -1,10 +1,10 @@
 name: daily-podcast
 
 on:
-#  schedule:
-    # 毎日 22:00 UTC = 日本時間 朝7:00（GitHubのcronは数分〜数十分遅延することがあります）
-#    - cron: "0 22 * * *"
-  workflow_dispatch: {}   # 手動実行ボタンも有効化
+  schedule:
+    # 毎日 22:00 UTC = 日本時間 朝7:00
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -32,6 +32,7 @@ jobs:
       - name: Generate today's episode
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         run: python src/generate_podcast.py
 
       - name: Commit & push
