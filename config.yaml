@@ -1,19 +1,14 @@
 # ============================================================
 # news-cast 設定ファイル
-# 毎朝の業界ニュースを2人対話のポッドキャストに変換するパイプライン
 # ============================================================
 
 podcast:
   title: "朝のAI・業界ニュース便"
   description: "AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。"
   author: "news-cast bot"
-  # GitHub Pages の公開URLに書き換えてください（末尾スラッシュなし）
-  # 例: https://your-github-id.github.io/news-cast
   base_url: "https://yasuyukisenda99.github.io/news-cast"
   language: "ja"
-  # 1エピソードの目安の長さ（分）
   episode_minutes: 8
-  # 保持するエピソード数（古いMP3は自動削除してリポジトリ肥大化を防ぐ）
   keep_episodes: 14
 
 news:
@@ -43,27 +38,40 @@ news:
     - "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
 
 gemini:
-  # 台本生成用モデル（上から順に試行し、使えるものを利用）
+  # 台本生成用モデル（上から順に試行）
   script_models:
     - "gemini-3.7-flash"
     - "gemini-3.6-flash"
     - "gemini-3.5-flash"
-  # 音声合成（TTS）用モデル（上から順に試行）
-  tts_models:
-    - "gemini-3.1-flash-tts-preview"
-    - "gemini-2.5-flash-preview-tts"
-  # 2人のホスト設定。voice はGeminiのプリビルド音声名
-  # （Kore / Puck / Zephyr / Charon / Leda / Orus / Aoede など）
+
+  # 音声合成の方式: "cloud"（Google Cloud TTS・推奨） / "gemini"（従来）
+  tts_provider: "cloud"
+
+  # Cloud TTS の設定
+  cloud_tts:
+    sample_rate: 24000
+    gap_seconds: 0.35        # 発言と発言の間の無音（秒）
+
+  # 2人のホスト設定
   hosts:
-    - speaker: "Aki"      # 台本内のラベル（半角英字推奨）
-      display: "アキ"      # 会話内で呼び合う名前
+    - speaker: "Aki"
+      display: "アキ"
       voice: "Kore"
+      cloud_voice: "ja-JP-Chirp3-HD-Kore"
+      speaking_rate: 0.95
       persona: "落ち着いた知的な女性ホスト。要点を整理して伝えるのが得意"
       voice_direction: "30代女性。やや低めの落ち着いた声で、一定のゆっくりめのテンポ。抑揚は控えめ"
     - speaker: "Haru"
       display: "ハル"
       voice: "Puck"
+      cloud_voice: "ja-JP-Chirp3-HD-Puck"
+      speaking_rate: 1.0
       persona: "明るくテンポの良い男性ホスト。リスナー目線の素朴な疑問を投げる"
       voice_direction: "30代男性。落ち着いた声で、明るくリズム感のあるテンポ。抑揚は少し高め、共感力強い"
-  # TTSに1回で渡す台本の最大文字数（長い台本は分割して結合します）
+
+  # 以下は tts_provider: "gemini" のときだけ使われます
+  tts_models:
+    - "gemini-3.1-flash-tts-preview"
+    - "gemini-2.5-flash-preview-tts"
   tts_chunk_chars: 1200
+  tts_temperature: 0.2
