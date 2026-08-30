@@ -1,9 +1,9 @@
 name: daily-podcast
 
 on:
-  schedule:
+#  schedule:
     # 毎日 22:00 UTC = 日本時間 朝7:00（GitHubのcronは数分〜数十分遅延することがあります）
-    - cron: "0 22 * * *"
+#    - cron: "0 22 * * *"
   workflow_dispatch: {}   # 手動実行ボタンも有効化
 
 permissions:
