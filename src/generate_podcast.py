@@ -27,6 +27,8 @@ import feedparser
 import requests
 import yaml
 
+import cloud_tts
+
 ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = ROOT / "docs"
 EPISODES_DIR = DOCS_DIR / "episodes"
@@ -342,6 +344,26 @@ def _extract_audio(response: dict) -> str:
 
 
 def synthesize(cfg: dict, script: str, api_key: str) -> bytes:
+    """設定に応じてCloud TTS / Gemini TTSを切り替える"""
+    provider = cfg["gemini"].get("tts_provider", "cloud")
+    if provider == "cloud":
+        raw = os.environ.get("GCP_SA_KEY", "")
+        if not raw:
+            raise RuntimeError(
+                "環境変数 GCP_SA_KEY が設定されていません"
+                "（GitHubのSecretsにサービスアカウントのJSONを登録してください）"
+            )
+        try:
+            sa_info = json.loads(raw)
+        except json.JSONDecodeError as e:
+            raise RuntimeError(f"GCP_SA_KEY のJSONを読めませんでした: {e}")
+        log("Google Cloud Text-to-Speech で合成します")
+        return cloud_tts.synthesize_script(cfg, script, sa_info, log=log)
+    log("Gemini TTS で合成します")
+    return _synthesize_gemini(cfg, script, api_key)
+
+
+def _synthesize_gemini(cfg: dict, script: str, api_key: str) -> bytes:
     gem = cfg["gemini"]
     hosts = gem["hosts"]
     speaker_configs = [
