@@ -20,6 +20,10 @@ class CloudTTSError(RuntimeError):
     pass
 
 
+class SentenceTooLong(CloudTTSError):
+    """文が長すぎるとAPIに拒否されたとき（自動で再分割して対処する）"""
+
+
 def get_access_token(sa_info: dict) -> str:
     """サービスアカウント情報からアクセストークンを取得する"""
     from google.oauth2 import service_account
@@ -57,23 +61,41 @@ def parse_turns(script: str, speakers: list[str]) -> list[tuple[str, str]]:
     return turns
 
 
-def split_long_text(text: str, limit: int = 180) -> list[str]:
-    """発言を文単位に分割する。
+SENTENCE_END = "。！？"
 
-    Chirp 3: HD は1文が長すぎると400エラーになるため、
-    まず句点で必ず区切り、それでも長い文は読点で、
-    さらに長ければ強制的に文字数で割る。
+
+def sanitize(text: str) -> str:
+    """読み上げに不要・不安定な記号を整理する"""
+    text = text.replace("\u02c6", "").replace("\u02dc", "")   # ˆ ˜ など
+    text = re.sub(r"[／/]+", "、", text)                        # スラッシュは読点に
+    text = re.sub(r"[…‥]+", "。", text)
+    text = re.sub(r"[〜~]+", "から", text)
+    text = re.sub(r"[\u200b-\u200f\ufeff]", "", text)        # 不可視文字
+    text = re.sub(r"[ \t]+", " ", text)
+    return text.strip()
+
+
+def split_long_text(text: str, limit: int = 100) -> list[str]:
+    """発言を、必ず文末記号で終わる短い断片に分割する。
+
+    Chirp 3: HD は「句点までを1文」と数え、長すぎる文を拒否する。
+    そのため読点や文字数で割った断片にも句点を補って終端させる。
     """
+    text = sanitize(text)
+    if not text:
+        return []
+
     # 句点・感嘆符・疑問符の直後で区切る（閉じ括弧が続く場合はそこまで含める）
-    sentences = re.split(r"(?<=[。！？])(?![」』）】\)])", text)
-    sentences = [s.strip() for s in sentences if s and s.strip()]
+    sentences = [
+        s.strip() for s in re.split(r"(?<=[。！？])(?![」』）】\)])", text) if s.strip()
+    ]
 
     pieces: list[str] = []
     for sentence in sentences:
         if len(sentence) <= limit:
             pieces.append(sentence)
             continue
-        # 読点で分割を試みる
+        # 読点で分割
         current = ""
         for part in re.split(r"(?<=[、，])", sentence):
             if current and len(current) + len(part) > limit:
@@ -85,14 +107,27 @@ def split_long_text(text: str, limit: int = 180) -> list[str]:
             pieces.append(current)
 
     # まだ長いものは文字数で強制分割
-    result: list[str] = []
+    # 句点を補う余地を残すため1文字分小さく割る
+    hard = max(10, limit - 1)
+    sized: list[str] = []
     for p in pieces:
-        while len(p) > limit:
-            result.append(p[:limit])
-            p = p[limit:]
+        while len(p) > hard:
+            sized.append(p[:hard])
+            p = p[hard:]
         if p:
-            result.append(p)
-    return result or [text]
+            sized.append(p)
+
+    # すべての断片を文末記号で終わらせる（APIに「1文」と認識させるため）
+    result = []
+    for p in sized:
+        p = p.strip().rstrip("、，")
+        # 記号だけの断片は読み上げ不要
+        if not p or not re.search(r"[0-9A-Za-z\u3040-\u30ff\u4e00-\u9fff]", p):
+            continue
+        if p[-1] not in SENTENCE_END and p[-1] not in "」』）】)":
+            p += "。"
+        result.append(p)
+    return result
 
 
 def wav_to_pcm(wav_bytes: bytes) -> tuple[bytes, int, int]:
@@ -139,6 +174,8 @@ def synthesize_one(
                 if channels != 1:
                     raise CloudTTSError(f"想定外のチャンネル数: {channels}")
                 return pcm, got_rate
+            if resp.status_code == 400 and "too long" in resp.text:
+                raise SentenceTooLong(resp.text[:200])
             if resp.status_code in (429, 500, 503):
                 last = CloudTTSError(f"HTTP {resp.status_code}: {resp.text[:200]}")
             else:
@@ -154,6 +191,27 @@ def synthesize_one(
     raise CloudTTSError(f"合成に失敗しました: {last}")
 
 
+def _synth_with_resplit(
+    piece: str, voice: str, token: str, rate: int,
+    speed: float, pitch: float, limit: int, log,
+) -> tuple[bytes, int]:
+    """合成する。長すぎると拒否された場合は半分に割って再挑戦する"""
+    try:
+        return synthesize_one(piece, voice, token, rate, speed, pitch, log=log)
+    except SentenceTooLong:
+        if len(piece) <= 20:
+            raise
+        new_limit = max(20, len(piece) // 2)
+        log(f"    文が長すぎたため{new_limit}文字で再分割します")
+        out, got = bytearray(), rate
+        for sub in split_long_text(piece, new_limit):
+            pcm, got = _synth_with_resplit(
+                sub, voice, token, rate, speed, pitch, new_limit, log
+            )
+            out += pcm
+        return bytes(out), got
+
+
 def synthesize_script(cfg: dict, script: str, sa_info: dict, log=print) -> bytes:
     """台本全体を合成して結合したPCMを返す"""
     tts_cfg = cfg["gemini"].get("cloud_tts", {})
@@ -161,7 +219,7 @@ def synthesize_script(cfg: dict, script: str, sa_info: dict, log=print) -> bytes
     rate = tts_cfg.get("sample_rate", 24000)
     turn_gap = tts_cfg.get("gap_seconds", 0.35)        # 話者が変わるときの間
     sentence_gap = tts_cfg.get("sentence_gap", 0.12)   # 同じ発言内の文と文の間
-    limit = tts_cfg.get("max_sentence_chars", 180)
+    limit = tts_cfg.get("max_sentence_chars", 100)
 
     voices = {
         h["speaker"]: h.get("cloud_voice", f"ja-JP-Chirp3-HD-{h['voice']}")
@@ -190,9 +248,9 @@ def synthesize_script(cfg: dict, script: str, sa_info: dict, log=print) -> bytes
         for j, piece in enumerate(pieces):
             if j > 0:
                 out += sentence_silence
-            pcm, got_rate = synthesize_one(
+            pcm, got_rate = _synth_with_resplit(
                 piece, voices[speaker], token, rate,
-                speeds[speaker], pitches[speaker], log=log,
+                speeds[speaker], pitches[speaker], limit, log,
             )
             if got_rate != rate:
                 raise CloudTTSError(f"サンプルレート不一致: {got_rate} != {rate}")
