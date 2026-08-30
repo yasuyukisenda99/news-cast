@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 29 Aug 2026 04:55:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 11:47:59 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年08月30日（Sun）AIインフラの次なる戦場とAnthropicを巡る最新動向</title>
+      <description>2026年8月30日の最新AI・業界ニュース。Nvidiaのデータセンター進化、Anthropicの法的・技術的動向、AI時代のSEO対策（GEO）まで深掘り解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-30.mp3" length="6571341" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-08-30.mp3</guid>
+      <pubDate>Sun, 30 Aug 2026 20:46:18 +0900</pubDate>
+      <itunes:duration>09:07</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年08月29日（Sat）</title>
       <description>Anthropicの自己改善AI研究やSalesforce連携、10億ドル規模のGPU調達、AI検索時代のマーケティング課題など最新動向をお届けします。</description>
