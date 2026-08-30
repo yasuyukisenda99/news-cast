@@ -250,6 +250,12 @@ def build_script(cfg: dict, articles: list[dict], api_key: str) -> dict:
         )
     articles_block = "\n".join(lines)
 
+    style_notes = pod.get("style_notes", "").strip()
+    structure = pod.get("structure", "").strip() or """1. オープニング: 日付と番組名、今日の見どころを一言
+2. メイントピック: 特に重要そうな2〜3件を選び、背景や意味合いを掛け合いで深掘り
+3. クイックヘッドライン: 残りの記事をテンポよく紹介
+4. クロージング: 短いまとめと締めの挨拶"""
+
     prompt = f"""あなたはニュースポッドキャストの放送作家です。
 以下の本日のニュース一覧をもとに、2人のホストによる日本語の対話台本を作成してください。
 
@@ -261,20 +267,19 @@ def build_script(cfg: dict, articles: list[dict], api_key: str) -> dict:
 # ホスト
 - {a['speaker']}（{a['display']}）: {a['persona']}
 - {b['speaker']}（{b['display']}）: {b['persona']}
+{f"\n# 番組の演出方針\n{style_notes}" if style_notes else ""}
 
 # 本日のニュース一覧
 {articles_block}
 
 # 構成の指示
-1. オープニング: 日付と番組名、今日の見どころを一言
-2. メイントピック: 特に重要そうな2〜3件を選び、背景や意味合いを掛け合いで深掘り
-3. クイックヘッドライン: 残りの記事をテンポよく紹介
-4. クロージング: 短いまとめと締めの挨拶
+{structure}
 
 # 厳守事項
 - ニュースは必ず自分の言葉で要約・言い換えること。記事の文章をそのまま読み上げない
 - 各ニュースで出典メディア名に軽く触れる
 - 会話は自然に。相槌・質問・軽い感想を交えるが、事実の捏造はしない
+- 推測や解釈を述べるときは「〜と考えられます」「私の見方では」など、事実と区別できる言い方にする
 - 台本の各行は必ず「{a['speaker']}: 」または「{b['speaker']}: 」で始める（それ以外の記号・ト書き・見出しは入れない）
 
 # 出力形式
