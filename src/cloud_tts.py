@@ -1,4 +1,3 @@
-
 """Google Cloud Text-to-Speech による音声合成
 
 Gemini TTSと違い1リクエストが小さく、話者ごとに声が完全固定されるため、
@@ -58,22 +57,42 @@ def parse_turns(script: str, speakers: list[str]) -> list[tuple[str, str]]:
     return turns
 
 
-def split_long_text(text: str, limit: int = 900) -> list[str]:
-    """長すぎる発言を句点で分割する（1リクエストの上限対策）"""
-    if len(text) <= limit:
-        return [text]
-    pieces, current = [], ""
-    for sentence in re.split(r"(?<=[。！？])", text):
-        if not sentence:
+def split_long_text(text: str, limit: int = 180) -> list[str]:
+    """発言を文単位に分割する。
+
+    Chirp 3: HD は1文が長すぎると400エラーになるため、
+    まず句点で必ず区切り、それでも長い文は読点で、
+    さらに長ければ強制的に文字数で割る。
+    """
+    # 句点・感嘆符・疑問符の直後で区切る（閉じ括弧が続く場合はそこまで含める）
+    sentences = re.split(r"(?<=[。！？])(?![」』）】\)])", text)
+    sentences = [s.strip() for s in sentences if s and s.strip()]
+
+    pieces: list[str] = []
+    for sentence in sentences:
+        if len(sentence) <= limit:
+            pieces.append(sentence)
             continue
-        if current and len(current) + len(sentence) > limit:
+        # 読点で分割を試みる
+        current = ""
+        for part in re.split(r"(?<=[、，])", sentence):
+            if current and len(current) + len(part) > limit:
+                pieces.append(current)
+                current = part
+            else:
+                current += part
+        if current:
             pieces.append(current)
-            current = sentence
-        else:
-            current += sentence
-    if current:
-        pieces.append(current)
-    return pieces
+
+    # まだ長いものは文字数で強制分割
+    result: list[str] = []
+    for p in pieces:
+        while len(p) > limit:
+            result.append(p[:limit])
+            p = p[limit:]
+        if p:
+            result.append(p)
+    return result or [text]
 
 
 def wav_to_pcm(wav_bytes: bytes) -> tuple[bytes, int, int]:
@@ -140,7 +159,10 @@ def synthesize_script(cfg: dict, script: str, sa_info: dict, log=print) -> bytes
     tts_cfg = cfg["gemini"].get("cloud_tts", {})
     hosts = cfg["gemini"]["hosts"]
     rate = tts_cfg.get("sample_rate", 24000)
-    gap = tts_cfg.get("gap_seconds", 0.35)
+    turn_gap = tts_cfg.get("gap_seconds", 0.35)        # 話者が変わるときの間
+    sentence_gap = tts_cfg.get("sentence_gap", 0.12)   # 同じ発言内の文と文の間
+    limit = tts_cfg.get("max_sentence_chars", 180)
+
     voices = {
         h["speaker"]: h.get("cloud_voice", f"ja-JP-Chirp3-HD-{h['voice']}")
         for h in hosts
@@ -151,27 +173,33 @@ def synthesize_script(cfg: dict, script: str, sa_info: dict, log=print) -> bytes
     turns = parse_turns(script, [h["speaker"] for h in hosts])
     if not turns:
         raise CloudTTSError("台本から発言を取り出せませんでした")
-    log(f"台本を{len(turns)}個の発言に分解しました")
 
     token = get_access_token(sa_info)
-    silence = b"\x00" * int(rate * 2 * gap)
-    out = bytearray()
-    total = 0
+    turn_silence = b"\x00" * (int(rate * turn_gap) * 2)
+    sentence_silence = b"\x00" * (int(rate * sentence_gap) * 2)
 
-    for i, (speaker, text) in enumerate(turns, 1):
-        for piece in split_long_text(text):
+    pieces_per_turn = [split_long_text(t, limit) for _, t in turns]
+    total_requests = sum(len(p) for p in pieces_per_turn)
+    log(f"台本を{len(turns)}発言 / {total_requests}リクエストに分解しました")
+
+    out = bytearray()
+    done = 0
+    for i, ((speaker, _), pieces) in enumerate(zip(turns, pieces_per_turn)):
+        if out:
+            out += turn_silence
+        for j, piece in enumerate(pieces):
+            if j > 0:
+                out += sentence_silence
             pcm, got_rate = synthesize_one(
                 piece, voices[speaker], token, rate,
                 speeds[speaker], pitches[speaker], log=log,
             )
             if got_rate != rate:
                 raise CloudTTSError(f"サンプルレート不一致: {got_rate} != {rate}")
-            if out:
-                out += silence
             out += pcm
-            total += len(piece)
-        if i % 10 == 0 or i == len(turns):
-            log(f"  {i}/{len(turns)} 発言まで完了")
+            done += 1
+            if done % 20 == 0:
+                log(f"  {done}/{total_requests} 完了")
 
-    log(f"合成完了（{total}文字 / 音声{len(out) / (rate * 2):.1f}秒）")
+    log(f"合成完了（音声{len(out) / (rate * 2):.1f}秒）")
     return bytes(out)
