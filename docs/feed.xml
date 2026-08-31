@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 30 Aug 2026 12:38:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 00:03:57 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年08月31日（Mon）AIインフラの物理的限界と現場実装のリアル：Nvidiaのシステム最適化からイーロン・マスクの電力確保まで</title>
+      <description>2026年08月31日放送。NvidiaがGPU単体からデータセンター全体の通信最適化へ舵を切る背景と、イーロン・マスク氏による極秘ガスタービン調達に見るAI電力不足問題、さらにCaterpillarの現場運用技術やAnthropic訴訟などの最新動向を深掘り解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-31.mp3" length="6236397" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-08-31.mp3</guid>
+      <pubDate>Mon, 31 Aug 2026 09:02:28 +0900</pubDate>
+      <itunes:duration>08:39</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年08月30日（Sun）: AIの自己改善技術と巨額インフラ投資の真実</title>
       <description>2026年08月30日版。Anthropicの自己改善AI研究やNvidia・Lambdaを巡る巨額インフラ投資の動向を深掘り。さらに音楽大手による著作権提訴やCRMデータの品質問題まで、研究者とジャーナリストの視点で徹底解説します。</description>
