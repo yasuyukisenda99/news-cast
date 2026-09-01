@@ -176,7 +176,7 @@ def synthesize_one(
                 return pcm, got_rate
             if resp.status_code == 400 and "too long" in resp.text:
                 raise SentenceTooLong(resp.text[:200])
-            if resp.status_code in (429, 500, 503):
+            if resp.status_code in (429, 500, 502, 503, 504):
                 last = CloudTTSError(f"HTTP {resp.status_code}: {resp.text[:200]}")
             else:
                 raise CloudTTSError(f"HTTP {resp.status_code}: {resp.text[:300]}")
