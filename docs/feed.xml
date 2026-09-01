@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 31 Aug 2026 00:03:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 00:52:24 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 - 2026年09月01日（Tue）：NvidiaのMediaTek巨額投資と防衛AIの最前線</title>
+      <description>NvidiaによるMediaTekへの35億ドル投資が示す半導体覇権の次の一手と、米国防総省による主要LLM導入の意義を、技術とビジネスの両面から深く掘り下げます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-01.mp3" length="6392781" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-01.mp3</guid>
+      <pubDate>Tue, 01 Sep 2026 09:50:51 +0900</pubDate>
+      <itunes:duration>08:52</itunes:duration>
+    </item>
     <item>
       <title>2026年08月31日（Mon）AIインフラの物理的限界と現場実装のリアル：Nvidiaのシステム最適化からイーロン・マスクの電力確保まで</title>
       <description>2026年08月31日放送。NvidiaがGPU単体からデータセンター全体の通信最適化へ舵を切る背景と、イーロン・マスク氏による極秘ガスタービン調達に見るAI電力不足問題、さらにCaterpillarの現場運用技術やAnthropic訴訟などの最新動向を深掘り解説します。</description>
