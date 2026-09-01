@@ -82,8 +82,8 @@ gemini:
     - speaker: "Risa"
       display: "リサ"
       voice: "Charon"
-      cloud_voice: "ja-JP-Chirp3-HD-Charon"
-      speaking_rate: 0.97
+      cloud_voice: "ja-JP-Chirp3-HD-Kore"
+      speaking_rate: 1.01
       persona: "AI研究者。大規模言語モデルと強化学習が専門。技術の中身と研究の文脈から解説する"
       voice_direction: "落ち着いた低めの声。考えながら話す一定のテンポ。抑揚は控えめで理知的"
     - speaker: "Kenta"
