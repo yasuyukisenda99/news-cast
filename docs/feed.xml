@@ -5,17 +5,17 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 01 Sep 2026 15:23:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 23:40:10 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>2026年09月02日（Wed）朝のAI・業界ニュース便：AI投資の「隠れたコスト」とドメイン特化型AIの台頭</title>
-      <description>2026年9月2日の最新AI・業界ニュースを深掘り。AI導入における隠れたコストとROIの実務的検証、警察や国防など専門領域で進化するドメイン特化型AIの潮流、さらに生成AI時代の検索最適化（AEO）やSNSにおける透明性規制の動向まで解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-02.mp3" length="4791213" type="audio/mpeg"/>
+      <title>朝のAI・業界ニュース便（2026年09月02日 Wed）- AIのサイバー能力拡大と急速に立ち上がるガバナンス市場</title>
+      <description>2026年9月2日の注目ニュースを解説。OpenAIのサイバーセキュリティ特化モデル「Astra」の発表と、AIエージェントの安全性を検証するAIRの大型資金調達から、自律型AIの産業実装と防御の最前線を読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-02.mp3" length="5435469" type="audio/mpeg"/>
       <guid isPermaLink="false">2026-09-02.mp3</guid>
-      <pubDate>Wed, 02 Sep 2026 00:22:17 +0900</pubDate>
-      <itunes:duration>06:39</itunes:duration>
+      <pubDate>Wed, 02 Sep 2026 08:38:43 +0900</pubDate>
+      <itunes:duration>07:32</itunes:duration>
     </item>
     <item>
       <title>朝のAI・業界ニュース便 - 2026年09月01日（Tue）：NvidiaのMediaTek巨額投資と防衛AIの最前線</title>
