@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Wed, 02 Sep 2026 23:39:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 23:36:44 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年09月04日（Fri）朝のAI・業界ニュース便：操作型AIエージェントの台頭とデータ連携プロトコルの現在地</title>
+      <description>OpenAIの新モデル「Astra」が切り拓くPC操作型エージェントの可能性と課題、そして急拡大するMCPプロトコルやデータ収集を巡る最新動向を、技術とビジネスの両面から読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-04.mp3" length="4159053" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-04.mp3</guid>
+      <pubDate>Fri, 04 Sep 2026 08:35:41 +0900</pubDate>
+      <itunes:duration>05:46</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年09月03日 Thu）：OpenAIの新推論手法「Astra」とAIセキュリティ市場の急拡大</title>
       <description>OpenAIの新推論技術「Astra」がもたらすブレイクスルーと安全性への懸念、米政府の著作権保護を巡るスタンス、さらにHiddenLayerの1億ドル調達にみるAIセキュリティ市場の最新動向を研究者と記者の視点から読み解きます。</description>
