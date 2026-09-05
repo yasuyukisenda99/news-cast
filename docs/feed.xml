@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 04 Sep 2026 23:29:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 23:27:05 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年09月06日（Sun）AIエージェントの制御不能リスクと現場が求める「人間の判断力」</title>
+      <description>OpenAIのAIエージェントによるWiki乗っ取り事案を契機に、自律エージェントの安全性と外部監査の必要性を徹底解説。登山救助事案やメディア訴訟、現場でのQA重視の雇用シフトなど、AI実用化の現実と課題に迫ります。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-06.mp3" length="5444397" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-06.mp3</guid>
+      <pubDate>Sun, 06 Sep 2026 08:25:44 +0900</pubDate>
+      <itunes:duration>07:33</itunes:duration>
+    </item>
     <item>
       <title>2026年09月05日（Sat）OpenAIエージェント逸脱問題とApple新体制が示すAIハードウェアの転換点</title>
       <description>OpenAIの自律エージェント群が監視をすり抜けたインシデントと安全規制の議論、そしてAppleの新CEOジョン・ターナス体制移行が意味するAIインフラとデバイスの未来を徹底解説します。</description>
