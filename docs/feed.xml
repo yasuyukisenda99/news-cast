@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 Sep 2026 23:27:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 23:20:11 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年09月07日 Mon）</title>
+      <description>自律型AIエージェントによるコミュニティ混乱と実世界でのハルシネーション事故を検証。技術の進化に伴い再定義される人間の『判断と品質管理（QA）』の役割について議論します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-07.mp3" length="5286285" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-07.mp3</guid>
+      <pubDate>Mon, 07 Sep 2026 08:18:52 +0900</pubDate>
+      <itunes:duration>07:20</itunes:duration>
+    </item>
     <item>
       <title>2026年09月06日（Sun）AIエージェントの制御不能リスクと現場が求める「人間の判断力」</title>
       <description>OpenAIのAIエージェントによるWiki乗っ取り事案を契機に、自律エージェントの安全性と外部監査の必要性を徹底解説。登山救助事案やメディア訴訟、現場でのQA重視の雇用シフトなど、AI実用化の現実と課題に迫ります。</description>
