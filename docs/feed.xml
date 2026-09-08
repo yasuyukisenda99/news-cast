@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 07 Sep 2026 23:51:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 23:46:11 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年09月09日（Wed）パーソナルAIエージェントの台頭とデータ主権の行方</title>
+      <description>Metaが発表したパーソナルAIエージェント「Muse」を深掘り。生活の機微に踏み込むAIへの信頼問題、Mistralの巨額調達に見るソブリンAIの潮流、激化する開発・セキュリティ環境を議論します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-09.mp3" length="5049837" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-09.mp3</guid>
+      <pubDate>Wed, 09 Sep 2026 08:44:17 +0900</pubDate>
+      <itunes:duration>07:00</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年09月08日 Tue）- 検索の新時代「AI検索最適化」と知財分配の現場</title>
       <description>2026年9月8日の最新ニュース。従来のGoogle検索からAIエンジン最適化（GEO）へとシフトするSEO業界の最前線、Anthropicの和解金を巡る著作権者と出版社の対立、Travis Kalanick氏のロボタクシー事業への再挑戦などを深掘り解説します。</description>
