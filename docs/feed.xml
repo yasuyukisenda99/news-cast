@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 10 Sep 2026 23:31:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 23:38:49 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年09月12日（Sat））: ロボット学習データの争奪戦とAI安全性を巡る内部の警鐘</title>
+      <description>Mecka AIが評価額5億ドルに迫るロボット訓練データ市場の過熱や、Anthropic内部からの超知能開発への警告、オープンウェイトモデルの蒸留戦略まで、技術とビジネスの両面から読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-12.mp3" length="6125517" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-12.mp3</guid>
+      <pubDate>Sat, 12 Sep 2026 08:37:19 +0900</pubDate>
+      <itunes:duration>08:30</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年09月11日 Fri）：モデル蒸留を巡る知財摩擦とインフラ需要の限界</title>
       <description>Anthropicが公表した中国勢による蒸留問題とOpenAIの新規受付停止から、AIモデル開発の知財防衛と計算資源のボトルネック、そしてコンテンツ産業のAI実装について深掘りします。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-08-30.mp3</guid>
       <pubDate>Sun, 30 Aug 2026 21:37:18 +0900</pubDate>
       <itunes:duration>08:45</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年08月29日（Sat）</title>
-      <description>Anthropicの自己改善AI研究やSalesforce連携、10億ドル規模のGPU調達、AI検索時代のマーケティング課題など最新動向をお届けします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-29.mp3" length="13562829" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-08-29.mp3</guid>
-      <pubDate>Sat, 29 Aug 2026 12:36:06 +0900</pubDate>
-      <itunes:duration>18:50</itunes:duration>
     </item>
   </channel>
 </rss>
