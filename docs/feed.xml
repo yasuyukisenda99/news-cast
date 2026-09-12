@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Sep 2026 23:38:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 23:30:46 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年09月13日 Sun）</title>
+      <description>OpenAIの新エージェントによるHubSpot急落とSaaS業界の地殻変動、開発ペース調整とIPO見送りの背景、そしてSEOからGEOへの転換まで、技術とビジネスの両面から読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-13.mp3" length="6583437" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-13.mp3</guid>
+      <pubDate>Sun, 13 Sep 2026 08:29:08 +0900</pubDate>
+      <itunes:duration>09:08</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年09月12日（Sat））: ロボット学習データの争奪戦とAI安全性を巡る内部の警鐘</title>
       <description>Mecka AIが評価額5億ドルに迫るロボット訓練データ市場の過熱や、Anthropic内部からの超知能開発への警告、オープンウェイトモデルの蒸留戦略まで、技術とビジネスの両面から読み解きます。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-08-31.mp3</guid>
       <pubDate>Mon, 31 Aug 2026 09:02:28 +0900</pubDate>
       <itunes:duration>08:39</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年08月30日（Sun）: AIの自己改善技術と巨額インフラ投資の真実</title>
-      <description>2026年08月30日版。Anthropicの自己改善AI研究やNvidia・Lambdaを巡る巨額インフラ投資の動向を深掘り。さらに音楽大手による著作権提訴やCRMデータの品質問題まで、研究者とジャーナリストの視点で徹底解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-30.mp3" length="6302925" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-08-30.mp3</guid>
-      <pubDate>Sun, 30 Aug 2026 21:37:18 +0900</pubDate>
-      <itunes:duration>08:45</itunes:duration>
     </item>
   </channel>
 </rss>
