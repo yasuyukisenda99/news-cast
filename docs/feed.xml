@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 12 Sep 2026 23:30:46 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 23:46:55 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月14日（Mon）：AI開発の「意図的な減速」と既存産業への波紋</title>
+      <description>2026年9月14日のニュース。OpenAIとAnthropicが示唆するAI開発速度の調整論、サム・アルトマン氏の2026年IPO見送り表明、そして自律型AIエージェントの台頭がもたらすSaaS業界や中小企業への巨大なビジネスインパクトについて議論します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-14.mp3" length="5797773" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-14.mp3</guid>
+      <pubDate>Mon, 14 Sep 2026 08:45:08 +0900</pubDate>
+      <itunes:duration>08:03</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年09月13日 Sun）</title>
       <description>OpenAIの新エージェントによるHubSpot急落とSaaS業界の地殻変動、開発ペース調整とIPO見送りの背景、そしてSEOからGEOへの転換まで、技術とビジネスの両面から読み解きます。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-01.mp3</guid>
       <pubDate>Tue, 01 Sep 2026 09:50:51 +0900</pubDate>
       <itunes:duration>08:52</itunes:duration>
-    </item>
-    <item>
-      <title>2026年08月31日（Mon）AIインフラの物理的限界と現場実装のリアル：Nvidiaのシステム最適化からイーロン・マスクの電力確保まで</title>
-      <description>2026年08月31日放送。NvidiaがGPU単体からデータセンター全体の通信最適化へ舵を切る背景と、イーロン・マスク氏による極秘ガスタービン調達に見るAI電力不足問題、さらにCaterpillarの現場運用技術やAnthropic訴訟などの最新動向を深掘り解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-08-31.mp3" length="6236397" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-08-31.mp3</guid>
-      <pubDate>Mon, 31 Aug 2026 09:02:28 +0900</pubDate>
-      <itunes:duration>08:39</itunes:duration>
     </item>
   </channel>
 </rss>
