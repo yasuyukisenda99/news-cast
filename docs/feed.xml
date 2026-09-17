@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 15 Sep 2026 23:52:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 00:04:27 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年09月17日（Thu）AI検索時代を生き抜くGEO戦略とAIセーフティの最新潮流</title>
+      <description>消費者の行動が従来の検索からLLMやAIエージェントへとシフトする中、企業に求められる生成エンジン最適化（GEO）やAgent-Ready SEOの最前線、さらにAIラボにおける安全性監査の課題について専門家が深掘り解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-17.mp3" length="5906349" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-17.mp3</guid>
+      <pubDate>Thu, 17 Sep 2026 09:03:01 +0900</pubDate>
+      <itunes:duration>08:12</itunes:duration>
+    </item>
     <item>
       <title>2026年09月16日（Wed）AI爆発が引き起こすエネルギー危機と都市の葛藤</title>
       <description>2026年9月16日のニュース。AIデータセンターの急増に伴う米国の天然ガス消費急増や地域社会との衝突、主要AI企業による安全性協議の裏で進む政治的圧力、MetaのMCPサーバー対応やAEOスタートアップの急成長まで、技術と物理インフラの最前線を徹底議論します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-04.mp3</guid>
       <pubDate>Fri, 04 Sep 2026 08:35:41 +0900</pubDate>
       <itunes:duration>05:46</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年09月03日 Thu）：OpenAIの新推論手法「Astra」とAIセキュリティ市場の急拡大</title>
-      <description>OpenAIの新推論技術「Astra」がもたらすブレイクスルーと安全性への懸念、米政府の著作権保護を巡るスタンス、さらにHiddenLayerの1億ドル調達にみるAIセキュリティ市場の最新動向を研究者と記者の視点から読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-03.mp3" length="5808141" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-03.mp3</guid>
-      <pubDate>Thu, 03 Sep 2026 08:38:20 +0900</pubDate>
-      <itunes:duration>08:03</itunes:duration>
     </item>
   </channel>
 </rss>
