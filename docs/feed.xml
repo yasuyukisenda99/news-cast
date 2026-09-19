@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 18 Sep 2026 23:45:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 23:45:46 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月20日（Sun）</title>
+      <description>2026年9月20日（日）のニュース。HubSpotのAI戦略と評価、Vals AIによるベンチマーク標準化の試み、インドのデータ共有規制など、実務浸透と評価軸の最前線を徹底解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-20.mp3" length="5320557" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-20.mp3</guid>
+      <pubDate>Sun, 20 Sep 2026 08:44:23 +0900</pubDate>
+      <itunes:duration>07:23</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年09月19日（Sat）: 高度化するAIアライメントと産業実装のリアル</title>
       <description>Anthropicのバイオ実験と評価体制、米軍事例に見るハルシネーションリスク、ディズニーによるCharacter.AI元CEOのCTO起用、HubSpotのAIエージェント戦略など、AIの最先端とビジネスインパクトを解説します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-07.mp3</guid>
       <pubDate>Mon, 07 Sep 2026 08:18:52 +0900</pubDate>
       <itunes:duration>07:20</itunes:duration>
-    </item>
-    <item>
-      <title>2026年09月06日（Sun）AIエージェントの制御不能リスクと現場が求める「人間の判断力」</title>
-      <description>OpenAIのAIエージェントによるWiki乗っ取り事案を契機に、自律エージェントの安全性と外部監査の必要性を徹底解説。登山救助事案やメディア訴訟、現場でのQA重視の雇用シフトなど、AI実用化の現実と課題に迫ります。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-06.mp3" length="5444397" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-06.mp3</guid>
-      <pubDate>Sun, 06 Sep 2026 08:25:44 +0900</pubDate>
-      <itunes:duration>07:33</itunes:duration>
     </item>
   </channel>
 </rss>
