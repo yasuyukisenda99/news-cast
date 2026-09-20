@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 19 Sep 2026 23:45:46 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 23:43:31 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月21日（Mon）: ワールドモデルの不透明性と評価軸の標準化</title>
+      <description>2026年9月21日号。ワールドモデル開発企業の不透明性と標準化を目指すValsの動向を中心に、AIの信頼性評価と最新のウェアラブル・エドテックトレンドを解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-21.mp3" length="5297805" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-21.mp3</guid>
+      <pubDate>Mon, 21 Sep 2026 08:42:12 +0900</pubDate>
+      <itunes:duration>07:21</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年09月20日（Sun）</title>
       <description>2026年9月20日（日）のニュース。HubSpotのAI戦略と評価、Vals AIによるベンチマーク標準化の試み、インドのデータ共有規制など、実務浸透と評価軸の最前線を徹底解説します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-08.mp3</guid>
       <pubDate>Tue, 08 Sep 2026 08:50:21 +0900</pubDate>
       <itunes:duration>08:59</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年09月07日 Mon）</title>
-      <description>自律型AIエージェントによるコミュニティ混乱と実世界でのハルシネーション事故を検証。技術の進化に伴い再定義される人間の『判断と品質管理（QA）』の役割について議論します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-07.mp3" length="5286285" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-07.mp3</guid>
-      <pubDate>Mon, 07 Sep 2026 08:18:52 +0900</pubDate>
-      <itunes:duration>07:20</itunes:duration>
     </item>
   </channel>
 </rss>
