@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 20 Sep 2026 23:43:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 00:24:33 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月22日（Tue）: AIエージェントを巡るプラットフォーム攻防と業務再構築の最前線</title>
+      <description>Metaの新AIエージェント「Muse」を巡るAmazonとのデータ攻防戦、GEO/AEOなどAI時代の集客戦略、そして単なるAI導入を超えた業務再構築の本質について議論します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-22.mp3" length="5359149" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-22.mp3</guid>
+      <pubDate>Tue, 22 Sep 2026 09:23:10 +0900</pubDate>
+      <itunes:duration>07:26</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年09月21日（Mon）: ワールドモデルの不透明性と評価軸の標準化</title>
       <description>2026年9月21日号。ワールドモデル開発企業の不透明性と標準化を目指すValsの動向を中心に、AIの信頼性評価と最新のウェアラブル・エドテックトレンドを解説します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-09.mp3</guid>
       <pubDate>Wed, 09 Sep 2026 08:44:17 +0900</pubDate>
       <itunes:duration>07:00</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年09月08日 Tue）- 検索の新時代「AI検索最適化」と知財分配の現場</title>
-      <description>2026年9月8日の最新ニュース。従来のGoogle検索からAIエンジン最適化（GEO）へとシフトするSEO業界の最前線、Anthropicの和解金を巡る著作権者と出版社の対立、Travis Kalanick氏のロボタクシー事業への再挑戦などを深掘り解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-08.mp3" length="6478605" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-08.mp3</guid>
-      <pubDate>Tue, 08 Sep 2026 08:50:21 +0900</pubDate>
-      <itunes:duration>08:59</itunes:duration>
     </item>
   </channel>
 </rss>
