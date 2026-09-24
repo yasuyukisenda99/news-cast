@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Wed, 23 Sep 2026 00:01:26 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 00:06:43 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月24日（Thu）</title>
+      <description>SEOからGEO（生成エンジン最適化）へのシフトがもたらすマーケティング構造の激変や、バイオAIにおける安全性の取り組みなど、最新の技術動向とビジネスインパクトを解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-24.mp3" length="5046957" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-24.mp3</guid>
+      <pubDate>Thu, 24 Sep 2026 09:05:29 +0900</pubDate>
+      <itunes:duration>07:00</itunes:duration>
+    </item>
     <item>
       <title>2026年09月23日（Wed）モデルの低価格・エッジ化とAI検索時代の集客構造の変革</title>
       <description>Opus 5.5やGPT-6 Sol/Lunaの登場、Qualcommによるオンデバイス30Bモデル動作など、AIの低価格化とエッジ化を深掘り。さらにインバウンドSEOの崩壊とGEOへの移行などマーケティング構造の激変を議論します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-11.mp3</guid>
       <pubDate>Fri, 11 Sep 2026 08:29:50 +0900</pubDate>
       <itunes:duration>06:51</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年09月10日（Thu）：Appleが示すオンデバイスAIの現実解とOpenAIのガバナンス再編</title>
-      <description>2026年9月10日版。Appleの折りたたみ端末とAI設計、常時稼働するAI機能の倫理とプライバシー、そしてOpenAI取締役会へのPaul Christiano氏就任に見るAI安全性の現在地を掘り下げます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-10.mp3" length="5320845" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-10.mp3</guid>
-      <pubDate>Thu, 10 Sep 2026 08:35:14 +0900</pubDate>
-      <itunes:duration>07:23</itunes:duration>
     </item>
   </channel>
 </rss>
