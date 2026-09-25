@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 24 Sep 2026 00:06:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:10:54 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月25日（Fri）: バイブコーディングの産業化と実社会に進出するエージェントAI</title>
+      <description>2026年9月25日号。ARR6億ドルを突破したLovableに見るバイブコーディングの衝撃と、GoogleやElevenLabsが進める音声通話代行エージェントの現場実装、さらにオンデバイスAIの最新動向を深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-25.mp3" length="5968269" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-25.mp3</guid>
+      <pubDate>Fri, 25 Sep 2026 09:09:18 +0900</pubDate>
+      <itunes:duration>08:17</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年09月24日（Thu）</title>
       <description>SEOからGEO（生成エンジン最適化）へのシフトがもたらすマーケティング構造の激変や、バイオAIにおける安全性の取り組みなど、最新の技術動向とビジネスインパクトを解説します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-12.mp3</guid>
       <pubDate>Sat, 12 Sep 2026 08:37:19 +0900</pubDate>
       <itunes:duration>08:30</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年09月11日 Fri）：モデル蒸留を巡る知財摩擦とインフラ需要の限界</title>
-      <description>Anthropicが公表した中国勢による蒸留問題とOpenAIの新規受付停止から、AIモデル開発の知財防衛と計算資源のボトルネック、そしてコンテンツ産業のAI実装について深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-11.mp3" length="4940973" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-11.mp3</guid>
-      <pubDate>Fri, 11 Sep 2026 08:29:50 +0900</pubDate>
-      <itunes:duration>06:51</itunes:duration>
     </item>
   </channel>
 </rss>
