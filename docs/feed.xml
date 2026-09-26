@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 25 Sep 2026 00:10:54 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 00:17:35 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年09月26日（Sat）AIインフラの巨額投資とエージェント運用の安全性を巡る議論</title>
+      <description>2026年9月26日の「朝のAI・業界ニュース便」。Anthropicによる超大型クラウド契約やNscaleの巨額調達から見出すAIインフラの最新動向と、AIエージェントの自律化に伴うセキュリティリスク、CRM領域でのAI収益化について解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-26.mp3" length="4641165" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-26.mp3</guid>
+      <pubDate>Sat, 26 Sep 2026 09:15:58 +0900</pubDate>
+      <itunes:duration>06:26</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年09月25日（Fri）: バイブコーディングの産業化と実社会に進出するエージェントAI</title>
       <description>2026年9月25日号。ARR6億ドルを突破したLovableに見るバイブコーディングの衝撃と、GoogleやElevenLabsが進める音声通話代行エージェントの現場実装、さらにオンデバイスAIの最新動向を深掘りします。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-13.mp3</guid>
       <pubDate>Sun, 13 Sep 2026 08:29:08 +0900</pubDate>
       <itunes:duration>09:08</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年09月12日（Sat））: ロボット学習データの争奪戦とAI安全性を巡る内部の警鐘</title>
-      <description>Mecka AIが評価額5億ドルに迫るロボット訓練データ市場の過熱や、Anthropic内部からの超知能開発への警告、オープンウェイトモデルの蒸留戦略まで、技術とビジネスの両面から読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-12.mp3" length="6125517" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-12.mp3</guid>
-      <pubDate>Sat, 12 Sep 2026 08:37:19 +0900</pubDate>
-      <itunes:duration>08:30</itunes:duration>
     </item>
   </channel>
 </rss>
