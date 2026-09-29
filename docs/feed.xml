@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 28 Sep 2026 00:07:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 01:27:39 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>空間知能への巨額投資と自律型AIエージェントの制御・安全設計（2026年09月29日 Tue）</title>
+      <description>AMDによるWorld Labsの82億ドル買収から見る『世界モデル』の重要性と、NvidiaやOpenAIの動きに象徴されるAIエージェントの安全制御・実用化の課題について深掘り解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-29.mp3" length="5848749" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-29.mp3</guid>
+      <pubDate>Tue, 29 Sep 2026 10:26:09 +0900</pubDate>
+      <itunes:duration>08:07</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年09月28日（Mon）医療AIの裏に潜むコスト増とSEOからGEOへの大転換</title>
       <description>2026年9月28日（月）のニュース。医療現場でのAI導入が引き起こす医療費増加の課題と、従来のSEOからGEO（生成エンジン最適化）へと急シフトするデジタルマーケティングの最前線を徹底解説します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-16.mp3</guid>
       <pubDate>Wed, 16 Sep 2026 08:50:26 +0900</pubDate>
       <itunes:duration>09:28</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年09月15日（Tue）: AI開発の減速論争とエコシステム再編の波</title>
-      <description>2026年09月15日版。Nvidia CEOによるAI減速防止の発言背景、OpenAIやSuperhumanによる大型買収が示すエージェント化の潮流、そして従来のSEOに代わるGEO（生成エンジン最適化）の台頭まで詳しく議論します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-15.mp3" length="5534253" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-15.mp3</guid>
-      <pubDate>Tue, 15 Sep 2026 09:05:45 +0900</pubDate>
-      <itunes:duration>07:41</itunes:duration>
     </item>
   </channel>
 </rss>
