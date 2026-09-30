@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 01:27:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 00:53:41 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年09月30日（Wed） - OpenAIの1.4兆ドル評価額とエージェント経済の波紋</title>
+      <description>2026年09月30日放送。OpenAIの巨額調達と新エージェント「Dots」、アプリストアやオフィスツールへの参入動向を技術とビジネスの両面から徹底解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-30.mp3" length="5570829" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-09-30.mp3</guid>
+      <pubDate>Wed, 30 Sep 2026 09:52:10 +0900</pubDate>
+      <itunes:duration>07:44</itunes:duration>
+    </item>
     <item>
       <title>空間知能への巨額投資と自律型AIエージェントの制御・安全設計（2026年09月29日 Tue）</title>
       <description>AMDによるWorld Labsの82億ドル買収から見る『世界モデル』の重要性と、NvidiaやOpenAIの動きに象徴されるAIエージェントの安全制御・実用化の課題について深掘り解説します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-17.mp3</guid>
       <pubDate>Thu, 17 Sep 2026 09:03:01 +0900</pubDate>
       <itunes:duration>08:12</itunes:duration>
-    </item>
-    <item>
-      <title>2026年09月16日（Wed）AI爆発が引き起こすエネルギー危機と都市の葛藤</title>
-      <description>2026年9月16日のニュース。AIデータセンターの急増に伴う米国の天然ガス消費急増や地域社会との衝突、主要AI企業による安全性協議の裏で進む政治的圧力、MetaのMCPサーバー対応やAEOスタートアップの急成長まで、技術と物理インフラの最前線を徹底議論します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-16.mp3" length="6824781" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-16.mp3</guid>
-      <pubDate>Wed, 16 Sep 2026 08:50:26 +0900</pubDate>
-      <itunes:duration>09:28</itunes:duration>
     </item>
   </channel>
 </rss>
