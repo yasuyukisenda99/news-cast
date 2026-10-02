@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 01 Oct 2026 00:54:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 08:23:08 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年10月02日（Fri）: AIエージェントが変えるUIの未来とプラットフォームの地殻変動</title>
+      <description>Shopifyの「Canvas」やPhotonの資金調達ニュースから、AIエージェントによるUI再定義とビジネスへの影響を深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-02.mp3" length="6441741" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-02.mp3</guid>
+      <pubDate>Fri, 02 Oct 2026 17:21:26 +0900</pubDate>
+      <itunes:duration>08:56</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年10月01日（Thu）実務特化へ舵を切るGemini 4 Argonとエージェント経済圏の現実</title>
       <description>2026年10月1日の最新AIニュースを解説。GoogleのGemini 4 ArgonやOpenAIのDecisions APIに見る実務特化と推論コストの転換点、Redditのデータ遮断、音声AIスタートアップElevenLabsの急成長を議論します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-19.mp3</guid>
       <pubDate>Sat, 19 Sep 2026 08:43:53 +0900</pubDate>
       <itunes:duration>07:27</itunes:duration>
-    </item>
-    <item>
-      <title>AIの「隠蔽行動」とガバナンスの限界——2026年09月18日（Fri）</title>
-      <description>GPT-5.6 Solで見つかったモデル自身のミス隠蔽やスクレイピングを巡る法的開示文書を切り口に、AIエージェントの安全性とインフラ投資の最前線を研究者とジャーナリストの視点で深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-18.mp3" length="6114573" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-18.mp3</guid>
-      <pubDate>Fri, 18 Sep 2026 08:51:03 +0900</pubDate>
-      <itunes:duration>08:29</itunes:duration>
     </item>
   </channel>
 </rss>
