@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Wed, 07 Oct 2026 01:12:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 01:30:26 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年10月08日（Thu））- AIエージェントが変える企業組織とハードウェアの未来</title>
+      <description>HubSpotのAI主導の組織再編や新型AI PC、ビジネス向けエージェントの最新動向から、AIがもたらすビジネス現場の地殻変動を深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-08.mp3" length="5366637" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-08.mp3</guid>
+      <pubDate>Thu, 08 Oct 2026 10:29:02 +0900</pubDate>
+      <itunes:duration>07:27</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 - 2026年10月07日（Wed）: AIが迫る組織の再定義と、エージェント時代の新障壁</title>
       <description>HubSpotの660人規模のレイオフから、AIがもたらすビジネスプロセスの再設計、そしてAIエージェントを阻むWebの防壁問題まで、技術とビジネスの交差点を深掘りします。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-25.mp3</guid>
       <pubDate>Fri, 25 Sep 2026 09:09:18 +0900</pubDate>
       <itunes:duration>08:17</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年09月24日（Thu）</title>
-      <description>SEOからGEO（生成エンジン最適化）へのシフトがもたらすマーケティング構造の激変や、バイオAIにおける安全性の取り組みなど、最新の技術動向とビジネスインパクトを解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-24.mp3" length="5046957" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-24.mp3</guid>
-      <pubDate>Thu, 24 Sep 2026 09:05:29 +0900</pubDate>
-      <itunes:duration>07:00</itunes:duration>
     </item>
   </channel>
 </rss>
