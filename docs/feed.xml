@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 09 Oct 2026 01:33:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 01:23:02 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年10月10日（Sat）自律型エージェントの制御不全と問われる実効性</title>
+      <description>AnthropicがAI評価でネット遮断に踏み切った背景とエージェント制御の限界、AI予算拡大の一方で問われるROIの現実、そしてデータセンターを巡る巨大ITの透明性確保の動きを徹底議論します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-10.mp3" length="6031629" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-10.mp3</guid>
+      <pubDate>Sat, 10 Oct 2026 10:21:27 +0900</pubDate>
+      <itunes:duration>08:22</itunes:duration>
+    </item>
     <item>
       <title>2026年10月09日（Fri）自律型AIエージェントの企業導入と組織の再編</title>
       <description>GoogleがGeminiに本格的なビジネス向けエージェント機能を搭載。業務の自動化が進む一方でHubSpotが600人規模の人員削減を発表するなど、産業界に広がるAIシフトの光と影、そしてエージェント制御の最前線を読み解きます。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-27.mp3</guid>
       <pubDate>Sun, 27 Sep 2026 08:57:36 +0900</pubDate>
       <itunes:duration>06:25</itunes:duration>
-    </item>
-    <item>
-      <title>2026年09月26日（Sat）AIインフラの巨額投資とエージェント運用の安全性を巡る議論</title>
-      <description>2026年9月26日の「朝のAI・業界ニュース便」。Anthropicによる超大型クラウド契約やNscaleの巨額調達から見出すAIインフラの最新動向と、AIエージェントの自律化に伴うセキュリティリスク、CRM領域でのAI収益化について解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-26.mp3" length="4641165" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-26.mp3</guid>
-      <pubDate>Sat, 26 Sep 2026 09:15:58 +0900</pubDate>
-      <itunes:duration>06:26</itunes:duration>
     </item>
   </channel>
 </rss>
