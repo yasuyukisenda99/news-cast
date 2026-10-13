@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 12 Oct 2026 00:49:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 02:47:50 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年10月13日（Tue）検索から回答へ、激変する情報可視化とフロンティアモデルの現在地</title>
+      <description>AI検索の普及に伴い台頭するGEO・AEO市場とWebサイト側の防衛策を徹底分析。さらにMetaの新型モデル「Muse Wonder」やSaaS業界の人員再編など、技術と産業の転換点を読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-13.mp3" length="5633037" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-13.mp3</guid>
+      <pubDate>Tue, 13 Oct 2026 11:46:26 +0900</pubDate>
+      <itunes:duration>07:49</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年10月12日（Mon）AIの「非常ブレーキ」議論とGEOが変える情報生態系</title>
       <description>マイクロソフトのナデラCEOが提唱するAIの「非常ブレーキ」構想と信頼設計、そして検索から企業IRまでを一変させる生成エンジン最適化（GEO）の波について、技術とビジネスの交点から深掘りします。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-09-30.mp3</guid>
       <pubDate>Wed, 30 Sep 2026 09:52:10 +0900</pubDate>
       <itunes:duration>07:44</itunes:duration>
-    </item>
-    <item>
-      <title>空間知能への巨額投資と自律型AIエージェントの制御・安全設計（2026年09月29日 Tue）</title>
-      <description>AMDによるWorld Labsの82億ドル買収から見る『世界モデル』の重要性と、NvidiaやOpenAIの動きに象徴されるAIエージェントの安全制御・実用化の課題について深掘り解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-09-29.mp3" length="5848749" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-09-29.mp3</guid>
-      <pubDate>Tue, 29 Sep 2026 10:26:09 +0900</pubDate>
-      <itunes:duration>08:07</itunes:duration>
     </item>
   </channel>
 </rss>
