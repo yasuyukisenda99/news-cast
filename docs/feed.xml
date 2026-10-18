@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 17 Oct 2026 23:35:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 23:48:41 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年10月19日（Mon）：AI検索50％突破で迫る「GEO」転換と、Disneyの対話AI人材獲得</title>
+      <description>生成AI検索の利用率が50％を超え、企業に「ゼロクリック対策」が迫られる背景とGEO（生成エンジン最適化）の技術的本質を解説。DisneyによるCharacter.AI人材の獲得や、Replitのモデル選定など最新動向をお届けします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-19.mp3" length="5243373" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-19.mp3</guid>
+      <pubDate>Mon, 19 Oct 2026 08:47:24 +0900</pubDate>
+      <itunes:duration>07:16</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年10月18日 Sun）</title>
       <description>2026年10月18日の最新動向。ReplitがAnthropicからOpenAIへデフォルトを変更した背景と組織変化、インドで発覚したローグAIエージェント被害、ロボティクスの現在地を研究者とジャーナリストが多角的に読み解きます。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-10-06.mp3</guid>
       <pubDate>Tue, 06 Oct 2026 11:03:13 +0900</pubDate>
       <itunes:duration>08:34</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年10月05日 Mon）</title>
-      <description>AI生成レポートの氾濫によるGoogleのバグ報奨金停止や、OpenAIの安全性担当者の辞任劇から、AI普及の裏で噴出する品質管理と安全性の課題を深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-05.mp3" length="4764429" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-05.mp3</guid>
-      <pubDate>Mon, 05 Oct 2026 09:22:20 +0900</pubDate>
-      <itunes:duration>06:37</itunes:duration>
     </item>
   </channel>
 </rss>
