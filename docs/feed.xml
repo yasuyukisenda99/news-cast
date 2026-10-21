@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:47:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:15:41 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年10月21日（Wed）</title>
+      <description>Anthropicが提案したAI安全性法案の真意と計算資源を巡る摩擦、Google・Amazonの脱Nvidia戦略、OpenAIのバイオ領域買収まで、AI産業の最新動向を深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-21.mp3" length="6087501" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-21.mp3</guid>
+      <pubDate>Wed, 21 Oct 2026 09:14:17 +0900</pubDate>
+      <itunes:duration>08:27</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便（2026年10月20日 Tue）- チップ覇権の行方とエージェントのリスク</title>
       <description>AmazonのTorchNeuronやTenstorrentに見る脱Nvidiaの潮流と、Microsoftが警鐘を鳴らす自律型AIエージェントのセキュリティリスクについて徹底議論します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-10-08.mp3</guid>
       <pubDate>Thu, 08 Oct 2026 10:29:02 +0900</pubDate>
       <itunes:duration>07:27</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 - 2026年10月07日（Wed）: AIが迫る組織の再定義と、エージェント時代の新障壁</title>
-      <description>HubSpotの660人規模のレイオフから、AIがもたらすビジネスプロセスの再設計、そしてAIエージェントを阻むWebの防壁問題まで、技術とビジネスの交差点を深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-07.mp3" length="6084621" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-07.mp3</guid>
-      <pubDate>Wed, 07 Oct 2026 10:10:42 +0900</pubDate>
-      <itunes:duration>08:27</itunes:duration>
     </item>
   </channel>
 </rss>
