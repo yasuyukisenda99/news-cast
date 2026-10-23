@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:20:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:16:08 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年10月23日（Fri）AIの兆ドル評価と現場実装のリアル</title>
+      <description>OpenAIの1.25兆ドル評価での巨額調達報道やUberの全社3万人導入から、AIエージェントが企業インフラへと定着する現状とセキュリティの課題を読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-23.mp3" length="6029324" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-23.mp3</guid>
+      <pubDate>Fri, 23 Oct 2026 09:14:46 +0900</pubDate>
+      <itunes:duration>08:22</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年10月22日（Thu）AIエージェント時代のコマース攻防と検索の地殻変動</title>
       <description>2026年10月22日の最新AIニュースを解説。AIエージェントを拒むAmazonと迎えるWalmartの対立、Google検索シェア低下に見るGEOシフト、そしてAI自身が開発したコードモデルの台頭まで深掘りします。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-10-10.mp3</guid>
       <pubDate>Sat, 10 Oct 2026 10:21:27 +0900</pubDate>
       <itunes:duration>08:22</itunes:duration>
-    </item>
-    <item>
-      <title>2026年10月09日（Fri）自律型AIエージェントの企業導入と組織の再編</title>
-      <description>GoogleがGeminiに本格的なビジネス向けエージェント機能を搭載。業務の自動化が進む一方でHubSpotが600人規模の人員削減を発表するなど、産業界に広がるAIシフトの光と影、そしてエージェント制御の最前線を読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-09.mp3" length="5328621" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-09.mp3</guid>
-      <pubDate>Fri, 09 Oct 2026 10:32:18 +0900</pubDate>
-      <itunes:duration>07:24</itunes:duration>
     </item>
   </channel>
 </rss>
