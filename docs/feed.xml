@@ -5,10 +5,18 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:12:08 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 23:52:59 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年10月25日（Sun）「学習データの壁とモデルの分岐点」</title>
+      <description>OpenAIのライブウェブ学習停止とモデルの政治的バイアス調査を深掘り。Blockのオンデバイス音声モデルやGEO議論など、AIの現実的な運用課題を議論します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-25.mp3" length="6196940" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-25.mp3</guid>
+      <pubDate>Sun, 25 Oct 2026 08:51:38 +0900</pubDate>
+      <itunes:duration>08:36</itunes:duration>
+    </item>
     <item>
       <title>2026年10月24日（Sat）朝のAI・業界ニュース便：OpenAIのライブネット学習停止と揺らぐウェブエコシステム</title>
       <description>OpenAIが重大なリスクを理由にライブインターネットでのモデル学習を取りやめる方針を発表。その技術的必然性と、HubSpot株価急落やSEOの変容に代表されるデジタルマーケティング産業への波及効果、さらに自動運転の最新動向まで議論します。</description>
@@ -112,14 +120,6 @@
       <guid isPermaLink="false">2026-10-12.mp3</guid>
       <pubDate>Mon, 12 Oct 2026 09:47:49 +0900</pubDate>
       <itunes:duration>10:39</itunes:duration>
-    </item>
-    <item>
-      <title>2026年10月11日（Sun）自律型AIエージェントに求められる「非常ブレーキ」とインフラの透明性</title>
-      <description>MicrosoftナデラCEOの「非常ブレーキ」発言やAnthropicのネット接続遮断を軸に、制御不能リスクに直面するAIエージェントの現在地と、データセンターを巡るインフラ透明化の動きを議論します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-11.mp3" length="5286861" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-11.mp3</guid>
-      <pubDate>Sun, 11 Oct 2026 09:41:01 +0900</pubDate>
-      <itunes:duration>07:20</itunes:duration>
     </item>
   </channel>
 </rss>
