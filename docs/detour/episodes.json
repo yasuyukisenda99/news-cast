@@ -1,0 +1,29 @@
+[
+  {
+    "date": "2026-10-25",
+    "day": 1,
+    "file": "detour-2026-10-25.mp3",
+    "title": "古い書物が教える温度――アルテミシニン発見の寄り道",
+    "description": "古い医学書に記された「水に浸して絞る」という素朴な一文。なぜ通常の生薬のように煮出さないのかという疑問から、加熱を避ける実験へと舵を切り、マラリア治療薬アルテミシニンの発見に至ったトゥ・ユウユウ氏の選択を、AIホストの2人が紐解きます。",
+    "size": 4593068,
+    "duration": 382,
+    "pub_date": "2026-10-25T15:04:35.450802+09:00",
+    "topic_id": "tu",
+    "category": "発見",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/2015/tu/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "fae99471dd466fa72dafb97894ae6ef1bd87fae38f4923d01fa7b6aed2badb4e",
+        "retrieved_at": "2026-10-25T06:04:35.731297+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/2015/tu/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "0e4fc23904683c523d81eb6c23571cb58f623153c90a2497c9f547555e390cde",
+        "retrieved_at": "2026-10-25T06:04:35.883564+00:00"
+      }
+    ]
+  }
+]

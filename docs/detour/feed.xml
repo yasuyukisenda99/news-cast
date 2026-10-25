@@ -5,10 +5,17 @@
     <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 25 Oct 2026 02:18:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 06:09:30 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
-
+    <item>
+      <title>古い書物が教える温度――アルテミシニン発見の寄り道</title>
+      <description>古い医学書に記された「水に浸して絞る」という素朴な一文。なぜ通常の生薬のように煮出さないのかという疑問から、加熱を避ける実験へと舵を切り、マラリア治療薬アルテミシニンの発見に至ったトゥ・ユウユウ氏の選択を、AIホストの2人が紐解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-10-25.mp3" length="4593068" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-10-25.mp3</guid>
+      <pubDate>Sun, 25 Oct 2026 15:04:35 +0900</pubDate>
+      <itunes:duration>06:22</itunes:duration>
+    </item>
   </channel>
 </rss>
