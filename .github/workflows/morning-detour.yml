@@ -1,0 +1,63 @@
+name: morning-detour
+on:
+  schedule:
+    # JST 07:30。既存ニュース便から時刻をずらす（Actionsの遅延はあり得る）
+    - cron: '30 22 * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+# 既存ニュース便と同じグループ。リポジトリへの同時書き込みを防ぐ。
+concurrency:
+  group: daily-podcast
+  cancel-in-progress: false
+jobs:
+  generate:
+    if: github.ref == 'refs/heads/main' && vars.DETOUR_START_DATE != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check calendar window before installing dependencies
+        id: window
+        env:
+          DETOUR_START_DATE: ${{ vars.DETOUR_START_DATE }}
+        run: |
+          python - <<'PYTHON'
+          import datetime as dt
+          import os
+          today = dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date()
+          day = (today - dt.date.fromisoformat(os.environ['DETOUR_START_DATE'])).days
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write(f'active={str(0 <= day < 14).lower()}\n')
+          PYTHON
+      - if: steps.window.outputs.active == 'true'
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - if: steps.window.outputs.active == 'true'
+        run: pip install -r requirements.txt
+      - name: Generate only during the 14-day window
+        if: steps.window.outputs.active == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          DETOUR_START_DATE: ${{ vars.DETOUR_START_DATE }}
+        run: python src/generate_detour.py
+      - name: Commit only the new program
+        if: steps.window.outputs.active == 'true'
+        run: |
+          git config user.name 'news-cast-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add docs/detour
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Generate morning detour episode'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
