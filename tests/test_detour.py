@@ -178,7 +178,9 @@ class NewsRegressionTests(unittest.TestCase):
         exec(compile(source,'upstream_news.py','exec'),cls.upstream.__dict__)
 
     def test_existing_feed_and_page_are_identical(self):
-        cfg = shared.load_config()
+        # サムネイル未設定時は、基準コミットと完全に同じ出力であること
+        cfg = copy.deepcopy(shared.load_config())
+        cfg['podcast'].pop('image', None)
         meta = [dict(title='News & test',description='Description',file='2026-11-01.mp3',
                      pub_date='2026-11-01T07:00:00+09:00',size=123,duration=480)]
         class FixedDateTime(dt.datetime):
