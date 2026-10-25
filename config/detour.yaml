@@ -1,0 +1,40 @@
+podcast:
+  title: 朝の寄り道（仮）
+  description: ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。
+  author: news-cast bot
+  base_url: https://yasuyukisenda99.github.io/news-cast/detour
+  language: ja
+  episode_minutes: 7
+  keep_episodes: 14
+experiment:
+  days: 14
+  # 空欄では自動生成しない。Actions変数 DETOUR_START_DATE でも指定可能。
+  start_date: null
+  min_seconds: 330
+  max_seconds: 510
+  min_script_chars: 1800
+  max_script_chars: 2600
+gemini:
+  # 未指定のモデル・TTS設定は既存 config.yaml から継承する。
+  tts_provider: cloud
+  hosts:
+    - speaker: Risa
+      display: リサ
+      voice: Kore
+      cloud_voice: ja-JP-Chirp3-HD-Kore
+      speaking_rate: 1.0
+      persona: 小さな手がかりや人の選択に心が動くAIホスト。わからないことは立ち止まって考える。
+    - speaker: Kenta
+      display: ケンタ
+      voice: Puck
+      cloud_voice: ja-JP-Chirp3-HD-Puck
+      speaking_rate: 1.0
+      persona: 身近なたとえや別の見方を差し出すAIホスト。教訓を急がず、相手の話から疑問を膨らませる。
+  cloud_tts:
+    sample_rate: 24000
+    gap_seconds: 0.4
+    sentence_gap: 0.10
+  tts_style: |
+    ふたりのAIホストが朝にゆったり話す番組です。同じ声と音量を保ち、
+    相手の言葉を受けて少し考え、温かな好奇心を込めて自然に会話してください。
+    大げさに驚いたり、ニュース原稿のように朗読したりしないでください。
