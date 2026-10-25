@@ -12,7 +12,7 @@ podcast:
   keep_episodes: 14
 
   # ポッドキャストアプリに表示されるサムネイル（docs/ 直下に置いたファイル名）
-  image: "cover.jpg"
+  image: "cover-news.jpg"
 
   # 番組の演出方針（台本生成AIへの指示。ここを書き換えるだけで雰囲気が変わります）
   style_notes: |

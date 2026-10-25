@@ -7,7 +7,7 @@ podcast:
   episode_minutes: 7
   keep_episodes: 14
   # docs/detour/ 直下に置いたサムネイル
-  image: cover.jpg
+  image: cover-detour.jpg
 experiment:
   days: 14
   # 空欄では自動生成しない。Actions変数 DETOUR_START_DATE でも指定可能。
