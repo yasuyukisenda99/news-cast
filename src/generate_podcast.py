@@ -489,6 +489,18 @@ def build_feed(cfg: dict, meta: list[dict], output_dir: Path | None = None) -> N
     base = pod["base_url"].rstrip("/")
     now_rfc = email.utils.format_datetime(dt.datetime.now(dt.timezone.utc))
 
+    # 番組のサムネイル（podcast.image 未設定なら従来どおり出力しない）
+    image = pod.get("image")
+    image_tags = ""
+    if image:
+        image_url = image if image.startswith(("http://", "https://")) else f"{base}/{image.lstrip('/')}"
+        image_tags = (
+            f'\n    <itunes:image href="{escape(image_url)}"/>'
+            f'\n    <image><url>{escape(image_url)}</url>'
+            f'<title>{escape(pod["title"])}</title>'
+            f'<link>{escape(base)}/</link></image>'
+        )
+
     items = []
     for ep in meta:
         pub = email.utils.format_datetime(
@@ -513,7 +525,7 @@ def build_feed(cfg: dict, meta: list[dict], output_dir: Path | None = None) -> N
     <language>{escape(pod['language'])}</language>
     <lastBuildDate>{now_rfc}</lastBuildDate>
     <itunes:author>{escape(pod['author'])}</itunes:author>
-    <itunes:explicit>false</itunes:explicit>
+    <itunes:explicit>false</itunes:explicit>{image_tags}
     <atom:link href="{escape(base)}/feed.xml" rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}
   </channel>
