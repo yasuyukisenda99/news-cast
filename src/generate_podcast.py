@@ -392,6 +392,9 @@ def _synthesize_gemini(cfg: dict, script: str, api_key: str) -> bytes:
         f"話者の演出指示: {directions}\n\n"
     )
 
+    if gem.get("tts_style"):
+        style = gem["tts_style"] + "\n" + f"話者の演出指示: {directions}\n\n"
+
     chunks = _split_script(script, gem["tts_chunk_chars"])
     log(f"TTSを{len(chunks)}チャンクで合成します")
 
@@ -480,7 +483,8 @@ def _fmt_duration(seconds: int) -> str:
     return f"{seconds // 60:02d}:{seconds % 60:02d}"
 
 
-def build_feed(cfg: dict, meta: list[dict]) -> None:
+def build_feed(cfg: dict, meta: list[dict], output_dir: Path | None = None) -> None:
+    output_dir = DOCS_DIR if output_dir is None else output_dir
     pod = cfg["podcast"]
     base = pod["base_url"].rstrip("/")
     now_rfc = email.utils.format_datetime(dt.datetime.now(dt.timezone.utc))
@@ -515,7 +519,7 @@ def build_feed(cfg: dict, meta: list[dict]) -> None:
   </channel>
 </rss>
 """
-    (DOCS_DIR / "feed.xml").write_text(feed, encoding="utf-8")
+    (output_dir / "feed.xml").write_text(feed, encoding="utf-8")
 
     rows = "\n".join(
         f'      <li><strong>{escape(ep["title"])}</strong><br>'
@@ -535,7 +539,7 @@ def build_feed(cfg: dict, meta: list[dict]) -> None:
   </ul>
 </body></html>
 """
-    (DOCS_DIR / "index.html").write_text(index, encoding="utf-8")
+    (output_dir / "index.html").write_text(index, encoding="utf-8")
     log("feed.xml と index.html を更新しました")
 
 

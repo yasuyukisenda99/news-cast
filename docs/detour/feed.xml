@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>朝の寄り道（仮）</title>
+    <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
+    <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
+    <language>ja</language>
+    <lastBuildDate>Sun, 25 Oct 2026 02:18:21 +0000</lastBuildDate>
+    <itunes:author>news-cast bot</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+
+  </channel>
+</rss>
