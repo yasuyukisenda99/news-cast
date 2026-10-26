@@ -1,8 +1,9 @@
 name: morning-detour
 on:
   schedule:
-    # JST 07:30。既存ニュース便から時刻をずらす（Actionsの遅延はあり得る）
-    - cron: '30 22 * * *'
+    # JST 13:00（= 04:00 UTC）。米国深夜〜早朝にあたりAPIが空きやすい時間帯。
+    # 話題が時事ではないため、生成が昼でも翌朝に聴く分には支障がない。
+    - cron: '0 4 * * *'
   workflow_dispatch: {}
 permissions:
   contents: write
