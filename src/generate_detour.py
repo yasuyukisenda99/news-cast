@@ -179,7 +179,7 @@ def validate_episode(episode, cfg, sources):
             raise ValueError('根拠引用が資料本文に一致しません（各25語以内）')
 
 
-def build_episode(cfg, topic, sources, api_key):
+def _build_episode_once(cfg, topic, sources, api_key):
     hosts = json.dumps(cfg['gemini']['hosts'], ensure_ascii=False)
     material = json.dumps(sources, ensure_ascii=False)
     episode = ask_json(cfg, f'''日本語の番組「朝の寄り道（仮）」の放送作家です。
@@ -215,6 +215,19 @@ FOMOや実用性の強制、人間としての架空体験がないかも確認�
     if any(audit.get(k) is not True for k in ('grounded', 'natural_dialogue', 'no_fomo', 'no_fake_experience')):
         raise ValueError('編集チェックを通過しなかったため公開しません')
     return episode
+
+
+def build_episode(cfg, topic, sources, api_key):
+    """基準を満たさなければ作り直す。生成は毎回ゼロからなので結果が変わりうる。"""
+    attempts = max(1, int(cfg['experiment'].get('max_attempts', 1)))
+    last = None
+    for i in range(1, attempts + 1):
+        try:
+            return _build_episode_once(cfg, topic, sources, api_key)
+        except ValueError as e:
+            last = e
+            print(f'[detour] 台本が基準を満たしませんでした（{i}/{attempts}回目）: {e}')
+    raise ValueError(f'{attempts}回試しましたが基準を満たす台本を作れませんでした: {last}')
 
 
 def read_meta(out=OUT):

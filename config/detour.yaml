@@ -14,6 +14,8 @@ experiment:
   start_date: null
   min_seconds: 330
   max_seconds: 510
+  # 台本が基準を満たさなかったときに作り直す回数（1回あたりGemini2呼び出し）
+  max_attempts: 3
   min_script_chars: 1800
   max_script_chars: 2600
 gemini:

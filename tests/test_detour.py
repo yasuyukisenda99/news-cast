@@ -156,7 +156,8 @@ class DetourTests(unittest.TestCase):
         for field in ('grounded','natural_dialogue','no_fomo','no_fake_experience'):
             audit = dict.fromkeys(('grounded','natural_dialogue','no_fomo','no_fake_experience'), True)
             audit[field] = False
-            with patch.object(detour,'ask_json',side_effect=[self.valid_episode(),audit]):
+            tries = max(1, int(self.cfg['experiment'].get('max_attempts', 1)))
+            with patch.object(detour,'ask_json',side_effect=[self.valid_episode(),audit]*tries):
                 with self.assertRaises(ValueError):
                     detour.build_episode(self.cfg,dict(hook='入口'),self.sources,'fake')
 
