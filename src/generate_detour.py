@@ -12,6 +12,7 @@ from pathlib import Path
 import re
 import shutil
 import tempfile
+import time
 from urllib.parse import urlparse
 
 import requests
@@ -217,17 +218,25 @@ FOMOや実用性の強制、人間としての架空体験がないかも確認�
     return episode
 
 
-def build_episode(cfg, topic, sources, api_key):
-    """基準を満たさなければ作り直す。生成は毎回ゼロからなので結果が変わりうる。"""
+def build_episode(cfg, topic, sources, api_key, deadline=None):
+    """基準を満たさなければ作り直す。
+
+    APIが混雑していると1回の生成に数分かかるため、残り時間が尽きたら
+    打ち切る。ワークフローのタイムアウトで強制終了されると、
+    後片付けもログも残らないため。
+    """
     attempts = max(1, int(cfg['experiment'].get('max_attempts', 1)))
     last = None
     for i in range(1, attempts + 1):
+        if i > 1 and deadline is not None and time.monotonic() >= deadline:
+            print('[detour] 持ち時間を使い切ったため、作り直しを打ち切ります')
+            break
         try:
             return _build_episode_once(cfg, topic, sources, api_key)
         except ValueError as e:
             last = e
             print(f'[detour] 台本が基準を満たしませんでした（{i}/{attempts}回目）: {e}')
-    raise ValueError(f'{attempts}回試しましたが基準を満たす台本を作れませんでした: {last}')
+    raise ValueError(f'基準を満たす台本を作れませんでした: {last}')
 
 
 def read_meta(out=OUT):
@@ -281,7 +290,9 @@ def run(cfg, start, today, *, skip_tts=False, out=OUT):
         raise ValueError('GCP_SA_KEY が必要です')
     topics = json.loads((ROOT / 'config/detour-topics.json').read_text())
     topic, sources = collect_story(topics, meta)
-    episode = build_episode(cfg, topic, sources, api_key)
+    budget = float(cfg['experiment'].get('script_budget_minutes', 20))
+    episode = build_episode(cfg, topic, sources, api_key,
+                            deadline=time.monotonic() + budget * 60)
     public_sources = [{k: s[k] for k in ('url', 'publisher', 'sha256', 'retrieved_at')} for s in sources]
     public_episode = {k: episode[k] for k in ('title', 'description', 'script')}
     public_episode.update(topic_id=topic['id'], sources=public_sources)

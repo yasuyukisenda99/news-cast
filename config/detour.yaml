@@ -16,6 +16,8 @@ experiment:
   max_seconds: 510
   # 台本が基準を満たさなかったときに作り直す回数（1回あたりGemini2呼び出し）
   max_attempts: 3
+  # 台本作りに使える上限（分）。混雑時はここで打ち切り、音声合成の時間を残す
+  script_budget_minutes: 20
   min_script_chars: 1800
   max_script_chars: 2600
 gemini:
