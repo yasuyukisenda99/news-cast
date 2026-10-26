@@ -15,7 +15,8 @@ jobs:
   generate:
     if: github.ref == 'refs/heads/main' && vars.DETOUR_START_DATE != ''
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    # 台本20分＋音声合成・後処理の余裕。script_budget_minutes より十分大きく取る
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
         with:
