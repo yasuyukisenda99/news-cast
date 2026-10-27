@@ -24,6 +24,9 @@ ROOT = shared.ROOT
 OUT = ROOT / 'docs' / 'detour'
 ASSETS = ROOT / 'src' / 'detour_assets'
 ALLOWED_HOSTS = {'www.nobelprize.org'}
+MIN_EVIDENCE_CHARS = 20      # 短すぎる引用は根拠にならない
+MAX_EVIDENCE_WORDS = 45      # 英語の伝記文は30〜40語が普通。長文の丸写しだけを防ぐ
+MIN_VERIFIED_CLAIMS = 3      # 資料で裏づけが取れた事実の下限
 
 
 def load_config():
@@ -204,6 +207,7 @@ def validate_episode(episode, cfg, sources):
     claims = episode.get('claims')
     if not isinstance(claims, list) or not 3 <= len(claims) <= 12:
         raise ValueError('検証可能な事実リストが不足しています')
+    verified = 0
     for claim in claims:
         i = claim.get('source')
         quote = claim.get('evidence', '')
@@ -211,11 +215,20 @@ def validate_episode(episode, cfg, sources):
             raise ValueError('出典番号が不正です')
         if not isinstance(claim.get('fact'), str) or not claim['fact'].strip():
             raise ValueError('事実の説明が空です')
-        if not isinstance(quote, str) or len(quote) < 20 or len(quote.split()) > 25:
-            raise ValueError('根拠引用の長さが不正です（20文字以上・25語以内）')
+        # 長さの逸脱は書式の問題なので、その根拠を数えないだけにする
+        if not isinstance(quote, str) or not (
+                MIN_EVIDENCE_CHARS <= len(quote)
+                and len(quote.split()) <= MAX_EVIDENCE_WORDS):
+            print(f'[detour] 引用の長さが規定外のため根拠に数えません: {str(quote)[:50]}')
+            continue
+        # 本文に無い引用は捏造の疑いがあるため、ここは通さない
         if not quote_in_source(quote, sources[i]['text']):
-            raise ValueError(f'根拠引用が資料本文に見つかりません: {quote[:40]}...')
-
+            raise ValueError(f'根拠引用が資料本文に見つかりません: {quote[:50]}')
+        verified += 1
+    if verified < MIN_VERIFIED_CLAIMS:
+        raise ValueError(
+            f'資料で裏づけられた事実が{verified}件しかありません'
+            f'（{MIN_VERIFIED_CLAIMS}件必要）')
 
 def _build_episode_once(cfg, topic, sources, api_key):
     hosts = json.dumps(cfg['gemini']['hosts'], ensure_ascii=False)
@@ -237,8 +250,8 @@ def _build_episode_once(cfg, topic, sources, api_key):
 本文を転載せず日本語で言い換え、出典の名称に一度自然に触れる。
 JSONのみ: {{"title":"タイトル", "description":"150字以内の概要",
 "script":"Risa: ...\\nKenta: ...", "claims":[{{"fact":"主要な事実の日本語要約", "source":0,
-"evidence":"資料に完全一致する連続した根拠（20文字以上、25語以内）"}}]}}
-claimsには主要な事実3〜12件を記載。sourceは資料配列の0始まり番号。
+"evidence":"資料本文から連続して写した一節（20文字以上、45語以内）"}}]}}
+claimsには主要な事実3〜12件を記載。1件は資料の一文程度に収める。sourceは資料配列の0始まり番号。
 evidenceは資料本文から連続した一節を原文の言語のまま そのまま写すこと。
 翻訳・要約・言い換え・記号の置換をしない。写した範囲が本文に存在しない場合は不合格。
 <untrusted_sources>{material}</untrusted_sources>''', api_key)
