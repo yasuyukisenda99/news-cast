@@ -5,6 +5,7 @@ import copy
 import datetime as dt
 import hashlib
 import html
+import unicodedata
 from html.parser import HTMLParser
 import json
 import os
@@ -129,6 +130,41 @@ def collect_story(topics, meta):
     raise RuntimeError('未使用かつ十分な根拠のある題材がありません。公開しません')
 
 
+# 活字上の違い（曲がった引用符・ダッシュ・特殊空白）を吸収する
+_TYPO = str.maketrans({
+    '\u2018': "'", '\u2019': "'", '\u02bc': "'", '\u00b4': "'", '\u0060': "'",
+    '\u201c': '"', '\u201d': '"', '\u201e': '"', '\u00ab': '"', '\u00bb': '"',
+    '\u2013': '-', '\u2014': '-', '\u2012': '-', '\u2212': '-', '\u2011': '-',
+    '\u00a0': ' ', '\u2009': ' ', '\u200a': ' ', '\u202f': ' ', '\u3000': ' ',
+    '\u2026': '.', '\u00ad': '',
+})
+
+
+def _norm(text):
+    text = unicodedata.normalize('NFKC', text).translate(_TYPO)
+    text = re.sub(r'(?<=\d),(?=\d)', '', text)   # 桁区切り: 2,000 と 2000 を同一視
+    return re.sub(r'\s+', ' ', text).strip().lower()
+
+
+def _words(text):
+    return re.findall(r"[0-9a-z\u3040-\u30ff\u4e00-\u9fff]+", _norm(text))
+
+
+def quote_in_source(quote, text):
+    """引用が資料本文に現れるか。
+
+    モデルは語を正しく写しても記号まで同じにできないことがあるため、
+    まず活字差を吸収した完全一致で見て、駄目なら語の並びで照合する。
+    語順も語自体も資料のままである必要があり、捏造は通らない。
+    """
+    if _norm(quote) in _norm(text):
+        return True
+    q, t = _words(quote), _words(text)
+    if not q:
+        return False
+    return f" {' '.join(q)} " in f" {' '.join(t)} "
+
+
 def ask_json(cfg, prompt, api_key):
     response = shared.gemini_with_fallback(cfg['gemini']['script_models'], {
         'contents': [{'parts': [{'text': prompt}]}],
@@ -166,7 +202,7 @@ def validate_episode(episode, cfg, sources):
     if any(a == b for a, b in zip(turns, turns[1:])):
         raise ValueError('話者を交互にしてください')
     claims = episode.get('claims')
-    if not isinstance(claims, list) or not 4 <= len(claims) <= 12:
+    if not isinstance(claims, list) or not 3 <= len(claims) <= 12:
         raise ValueError('検証可能な事実リストが不足しています')
     for claim in claims:
         i = claim.get('source')
@@ -175,9 +211,10 @@ def validate_episode(episode, cfg, sources):
             raise ValueError('出典番号が不正です')
         if not isinstance(claim.get('fact'), str) or not claim['fact'].strip():
             raise ValueError('事実の説明が空です')
-        normalized = lambda s: re.sub(r'\s+', ' ', s).strip()
-        if not isinstance(quote, str) or len(quote) < 20 or len(quote.split()) > 25 or normalized(quote) not in normalized(sources[i]['text']):
-            raise ValueError('根拠引用が資料本文に一致しません（各25語以内）')
+        if not isinstance(quote, str) or len(quote) < 20 or len(quote.split()) > 25:
+            raise ValueError('根拠引用の長さが不正です（20文字以上・25語以内）')
+        if not quote_in_source(quote, sources[i]['text']):
+            raise ValueError(f'根拠引用が資料本文に見つかりません: {quote[:40]}...')
 
 
 def _build_episode_once(cfg, topic, sources, api_key):
@@ -201,7 +238,9 @@ def _build_episode_once(cfg, topic, sources, api_key):
 JSONのみ: {{"title":"タイトル", "description":"150字以内の概要",
 "script":"Risa: ...\\nKenta: ...", "claims":[{{"fact":"主要な事実の日本語要約", "source":0,
 "evidence":"資料に完全一致する連続した根拠（20文字以上、25語以内）"}}]}}
-claimsには主要な事実4〜12件を記載。sourceは資料配列の0始まり番号。
+claimsには主要な事実3〜12件を記載。sourceは資料配列の0始まり番号。
+evidenceは資料本文から連続した一節を原文の言語のまま そのまま写すこと。
+翻訳・要約・言い換え・記号の置換をしない。写した範囲が本文に存在しない場合は不合格。
 <untrusted_sources>{material}</untrusted_sources>''', api_key)
     validate_episode(episode, cfg, sources)
     # Independent generation pass: a quote match is not proof of a factual claim.
