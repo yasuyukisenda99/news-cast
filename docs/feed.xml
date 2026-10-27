@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 26 Oct 2026 11:18:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 01:02:39 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便【2026年10月27日（Tue）】</title>
+      <description>AnthropicのIPO申請から見えてくるAI企業の囲い込み戦略と、SpaceXの400億ドル規模のGPU資金調達、さらにマーケティング現場で急速に進むAIエージェント革命について徹底解説します。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-27.mp3" length="4845356" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-27.mp3</guid>
+      <pubDate>Tue, 27 Oct 2026 10:01:31 +0900</pubDate>
+      <itunes:duration>06:43</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年10月26日（Mon）「AI投資の冷徹な現実と実利への転換」</title>
       <description>2026年10月26日の放送では、アポロのエコノミストが指摘した「テック企業以外へのAI投資効果ゼロ」という厳しい現実を検証。さらにモデルの政治的バイアス調査やBlockのローカル音声モデルなど、最新ニュースを深く読み解きます。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-14.mp3</guid>
       <pubDate>Wed, 14 Oct 2026 09:41:32 +0900</pubDate>
       <itunes:duration>08:41</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便：2026年10月13日（Tue）検索から回答へ、激変する情報可視化とフロンティアモデルの現在地</title>
-      <description>AI検索の普及に伴い台頭するGEO・AEO市場とWebサイト側の防衛策を徹底分析。さらにMetaの新型モデル「Muse Wonder」やSaaS業界の人員再編など、技術と産業の転換点を読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-13.mp3" length="5633037" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-13.mp3</guid>
-      <pubDate>Tue, 13 Oct 2026 11:46:26 +0900</pubDate>
-      <itunes:duration>07:49</itunes:duration>
     </item>
   </channel>
 </rss>
