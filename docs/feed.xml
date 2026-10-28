@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Oct 2026 01:02:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:50:21 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年10月28日 Wed）</title>
+      <description>OpenAIを揺るがす服薬指導訴訟とエージェントの安全性、HubSpot格下げに見るAIマネタイズの壁、Google Genie 4など最新動向を深掘り解説。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-28.mp3" length="6983468" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-10-28.mp3</guid>
+      <pubDate>Wed, 28 Oct 2026 09:48:50 +0900</pubDate>
+      <itunes:duration>09:41</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便【2026年10月27日（Tue）】</title>
       <description>AnthropicのIPO申請から見えてくるAI企業の囲い込み戦略と、SpaceXの400億ドル規模のGPU資金調達、さらにマーケティング現場で急速に進むAIエージェント革命について徹底解説します。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-15.mp3</guid>
       <pubDate>Thu, 15 Oct 2026 09:10:32 +0900</pubDate>
       <itunes:duration>07:57</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 - 2026年10月14日（Wed）</title>
-      <description>Science Corporationによる視覚再生BCIチップの臨床治験進展や、製造業ロボットの即時適応、企業内AIセキュリティの新たな課題まで、実世界に浸透する先端技術の最前線を技術とビジネスの両視点から深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-14.mp3" length="6256845" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-14.mp3</guid>
-      <pubDate>Wed, 14 Oct 2026 09:41:32 +0900</pubDate>
-      <itunes:duration>08:41</itunes:duration>
     </item>
   </channel>
 </rss>
