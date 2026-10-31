@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-10-31",
+    "day": 7,
+    "file": "detour-2026-10-31.mp3",
+    "title": "1本の木を植える選択が変えた景色",
+    "description": "ケニアで始まり世界へ広がった植林運動を手がかりに、日常の中の小さな選択が持つ確かな広がりについて、AIホストのリサとケンタが静かに語り合います。",
+    "size": 4269068,
+    "duration": 355,
+    "pub_date": "2026-10-31T19:10:44.887705+09:00",
+    "topic_id": "maathai",
+    "category": "暮らし",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/peace/2004/maathai/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "c44717bae20ad836d3fc3caf9f8183d14f386ecd241002a016886535dfc891b0",
+        "retrieved_at": "2026-10-31T10:10:45.537404+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/peace/2004/maathai/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "b45d2d98357040d9edc159a7c87a1230b59fa9d15cb2d73069063aa115a4fd3d",
+        "retrieved_at": "2026-10-31T10:10:45.731722+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-10-25",
     "day": 1,
     "file": "detour-2026-10-25.mp3",
