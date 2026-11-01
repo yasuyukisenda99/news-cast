@@ -98,12 +98,15 @@ class DetourTests(unittest.TestCase):
     def test_failed_audio_never_publishes(self):
         marker = self.out / 'feed.xml'
         marker.write_text('old feed')
-        for duration in (0,329,511):
+        for duration in (0,239,661):          # 想定外の長さ＝公開しない
             with self.assertRaises(ValueError):
                 self.invoke(duration=duration)
             self.assertEqual(marker.read_text(), 'old feed')
             self.assertFalse((self.out / 'episodes.json').exists())
             self.assertFalse((self.out / 'episodes').exists())
+        # 目安を少し外れただけなら公開する（325秒で破棄された件の回帰）
+        self.assertEqual(self.invoke(duration=325), 0)
+        self.assertTrue((self.out / 'episodes.json').exists())
 
     def test_preview_never_writes_public_output(self):
         before = list(self.out.rglob('*'))
@@ -153,13 +156,34 @@ class DetourTests(unittest.TestCase):
                 detour.validate_episode(bad,self.cfg,self.sources)
 
     def test_editor_rejection_stops_before_audio(self):
-        for field in ('grounded','natural_dialogue','no_fomo','no_fake_experience'):
+        """事実・倫理の疑義は公開を止め、出来栄えの指摘では止めない"""
+        tries = max(1, int(self.cfg['experiment'].get('max_attempts', 1)))
+        for field in ('grounded','no_fake_experience'):
             audit = dict.fromkeys(('grounded','natural_dialogue','no_fomo','no_fake_experience'), True)
             audit[field] = False
-            tries = max(1, int(self.cfg['experiment'].get('max_attempts', 1)))
             with patch.object(detour,'ask_json',side_effect=[self.valid_episode(),audit]*tries):
-                with self.assertRaises(ValueError):
+                with self.assertRaises(ValueError, msg=field):
                     detour.build_episode(self.cfg,dict(hook='入口'),self.sources,'fake')
+        for field in ('natural_dialogue','no_fomo'):
+            audit = dict.fromkeys(('grounded','natural_dialogue','no_fomo','no_fake_experience'), True)
+            audit[field] = False
+            with patch.object(detour,'ask_json',side_effect=[self.valid_episode(),audit]):
+                episode = detour.build_episode(self.cfg,dict(hook='入口'),self.sources,'fake')
+            self.assertEqual(episode['title'], '発見', field)
+
+    def test_format_deviations_warn_but_publish(self):
+        """目安を外れた長さや話者の偏りは注意に留め、捏造は止める"""
+        episode = self.valid_episode()
+        episode['script'] = '\n'.join(
+            ('Risa' if i%2==0 else 'Kenta')+': '+'短めの発言です。'*9 for i in range(20))
+        notes = detour.validate_episode(episode,self.cfg,self.sources)
+        self.assertTrue(any('目安' in n for n in notes), notes)
+
+        fabricated = self.valid_episode()
+        for claim in fabricated['claims']:
+            claim['evidence'] = 'A sentence that never appears anywhere in the source.'
+        with self.assertRaises(ValueError):
+            detour.validate_episode(fabricated,self.cfg,self.sources)
 
     def test_html_parser_excludes_navigation_and_scripts(self):
         parser = detour.ArticleText()

@@ -12,14 +12,22 @@ experiment:
   days: 14
   # 空欄では自動生成しない。Actions変数 DETOUR_START_DATE でも指定可能。
   start_date: null
+  # 目安（外れても公開する。ログに注意が出るだけ）
   min_seconds: 330
   max_seconds: 510
+  # これを外れたら何かが壊れている、とみなして公開しない
+  hard_min_seconds: 240
+  hard_max_seconds: 660
   # 台本が基準を満たさなかったときに作り直す回数（1回あたりGemini2呼び出し）
   max_attempts: 3
   # 台本作りに使える上限（分）。混雑時はここで打ち切り、音声合成の時間を残す
   script_budget_minutes: 30
+  # 目安（外れても公開する）
   min_script_chars: 1800
   max_script_chars: 2600
+  # これを外れたら公開しない
+  hard_min_script_chars: 1200
+  hard_max_script_chars: 3600
 gemini:
   # 最新モデルほど混雑するため、空いている順に試す
   script_models:
