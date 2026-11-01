@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-01",
+    "day": 8,
+    "file": "detour-2026-11-01.mp3",
+    "title": "トウモロコシの色に耳をすます朝",
+    "description": "トウモロコシの実の粒に見られる不思議な色の模様。植物遺伝学者バーバラ・マクリントックの発見と歩みを通して、身近な観察から広がる視点の変化を語り合う朝の会話。",
+    "size": 4140908,
+    "duration": 345,
+    "pub_date": "2026-11-01T20:45:57.516692+09:00",
+    "topic_id": "mcclintock",
+    "category": "自然",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/1983/mcclintock/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "218811394d222b57ad1b6e8e936e3489e21e65c030719feb86ade938673e042c",
+        "retrieved_at": "2026-11-01T11:45:58.684277+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/1983/mcclintock/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "759f84bb2b9bb4fe53507b2adb1196afaeadd0fd48836f31dfa64094431d4a03",
+        "retrieved_at": "2026-11-01T11:45:58.885990+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-10-31",
     "day": 7,
     "file": "detour-2026-10-31.mp3",
