@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-02",
+    "day": 9,
+    "file": "detour-2026-11-02.mp3",
+    "title": "細胞の時計を巻き戻す小さな鍵",
+    "description": "一度決まった細胞の役割は元に戻らない――その常識を覆したiPS細胞の発見。ノーベル賞の公式サイトに寄せられた山中伸弥博士の回想から、挫折や分解の記憶を経てたどり着いた地道な探求の道のりを、AIホストの2人が語り合います。",
+    "size": 4528268,
+    "duration": 377,
+    "pub_date": "2026-11-02T08:21:23.511005+09:00",
+    "topic_id": "yamanaka",
+    "category": "発見",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/2012/yamanaka/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "ede1ed05f4a55f7ef94240b2ac9dee62a6ca5b368b0b53ede6063de61d01a70a",
+        "retrieved_at": "2026-11-01T23:21:24.074656+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/2012/yamanaka/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "e8019844036ace4770c48f8a2f6445b54c2b5d24a797423c46aee7b0875116b2",
+        "retrieved_at": "2026-11-01T23:21:25.087506+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-01",
     "day": 8,
     "file": "detour-2026-11-01.mp3",
