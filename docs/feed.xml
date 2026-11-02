@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:45:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 01:07:12 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年11月02日（Mon）朝のAI・業界ニュース便：AIエージェントが変える雇用の現場とSaaSモデルの転換点</title>
+      <description>AIエージェントの現場導入による雇用構造の変化やHubSpotの決算から見るSaaSビジネスの転換点、さらにOpenAIの資金調達動向やデータセンターをめぐる環境訴訟まで、研究とビジネスの両面から深く読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-02.mp3" length="6317900" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-02.mp3</guid>
+      <pubDate>Mon, 02 Nov 2026 10:05:50 +0900</pubDate>
+      <itunes:duration>08:46</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年11月01日（Sun）AI投資ブームに走る亀裂と持続可能性の岐路</title>
       <description>2026年11月1日放送。AIインフラへの巨額投資に対する市場の懸念やOpenAI等の資金調達見直しを軸に、技術の物理的限界とビジネスモデルの現実について議論します。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-20.mp3</guid>
       <pubDate>Tue, 20 Oct 2026 09:46:17 +0900</pubDate>
       <itunes:duration>06:59</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年10月19日（Mon）：AI検索50％突破で迫る「GEO」転換と、Disneyの対話AI人材獲得</title>
-      <description>生成AI検索の利用率が50％を超え、企業に「ゼロクリック対策」が迫られる背景とGEO（生成エンジン最適化）の技術的本質を解説。DisneyによるCharacter.AI人材の獲得や、Replitのモデル選定など最新動向をお届けします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-19.mp3" length="5243373" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-19.mp3</guid>
-      <pubDate>Mon, 19 Oct 2026 08:47:24 +0900</pubDate>
-      <itunes:duration>07:16</itunes:duration>
     </item>
   </channel>
 </rss>
