@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 23:24:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 08:04:34 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>共有の森を守る対話と知恵</title>
+      <description>共有の自然資源は荒廃するという通説に対し、現場の人々が自発的にルールを作って管理する道を示した政治学者エリノア・オストロム。彼女の足跡と研究姿勢から、身近な共有スペースや人間関係への視点を深める対話です。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-03.mp3" length="4721804" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-03.mp3</guid>
+      <pubDate>Tue, 03 Nov 2026 17:01:42 +0900</pubDate>
+      <itunes:duration>06:33</itunes:duration>
+    </item>
     <item>
       <title>細胞の時計を巻き戻す小さな鍵</title>
       <description>一度決まった細胞の役割は元に戻らない――その常識を覆したiPS細胞の発見。ノーベル賞の公式サイトに寄せられた山中伸弥博士の回想から、挫折や分解の記憶を経てたどり着いた地道な探求の道のりを、AIホストの2人が語り合います。</description>

@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-03",
+    "day": 10,
+    "file": "detour-2026-11-03.mp3",
+    "title": "共有の森を守る対話と知恵",
+    "description": "共有の自然資源は荒廃するという通説に対し、現場の人々が自発的にルールを作って管理する道を示した政治学者エリノア・オストロム。彼女の足跡と研究姿勢から、身近な共有スペースや人間関係への視点を深める対話です。",
+    "size": 4721804,
+    "duration": 393,
+    "pub_date": "2026-11-03T17:01:42.929925+09:00",
+    "topic_id": "ostrom",
+    "category": "暮らし",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "1ae08be7655a28b2f5c7d12ade2b7d73acfa25459d9139afb1cac83cdffbb86b",
+        "retrieved_at": "2026-11-03T08:01:43.961678+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "03f4f610c46e927ad3b0683e979f265ec734ab798c270680d83a5e3eb8bae524",
+        "retrieved_at": "2026-11-03T08:01:44.734465+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-02",
     "day": 9,
     "file": "detour-2026-11-02.mp3",
