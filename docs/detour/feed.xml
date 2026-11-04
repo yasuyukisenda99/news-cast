@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2026 08:04:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 11:53:41 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ミツバチのダンスと見えない会話</title>
+      <description>言葉を持たない生き物がどう情報を伝えるのか。ミツバチのダンスの発見背景にある研究者の眼差しから、生き物たちの感覚世界を想像する朝の静かな会話です。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-04.mp3" length="4074956" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-04.mp3</guid>
+      <pubDate>Wed, 04 Nov 2026 20:50:54 +0900</pubDate>
+      <itunes:duration>05:39</itunes:duration>
+    </item>
     <item>
       <title>共有の森を守る対話と知恵</title>
       <description>共有の自然資源は荒廃するという通説に対し、現場の人々が自発的にルールを作って管理する道を示した政治学者エリノア・オストロム。彼女の足跡と研究姿勢から、身近な共有スペースや人間関係への視点を深める対話です。</description>

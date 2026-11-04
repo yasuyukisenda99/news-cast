@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-04",
+    "day": 11,
+    "file": "detour-2026-11-04.mp3",
+    "title": "ミツバチのダンスと見えない会話",
+    "description": "言葉を持たない生き物がどう情報を伝えるのか。ミツバチのダンスの発見背景にある研究者の眼差しから、生き物たちの感覚世界を想像する朝の静かな会話です。",
+    "size": 4074956,
+    "duration": 339,
+    "pub_date": "2026-11-04T20:50:54.838851+09:00",
+    "topic_id": "frisch",
+    "category": "自然",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/1973/frisch/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "ea458771331deba9bc8dc6301a1898e9d627d3dc988a9e136ceea1ae4ec3a584",
+        "retrieved_at": "2026-11-04T11:50:55.205205+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/1973/frisch/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "d38c50fddcec47c43e99e3d2a7f90dd43d388bd6a7789b85888f02f3721a5c0e",
+        "retrieved_at": "2026-11-04T11:50:56.332531+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "day": 10,
     "file": "detour-2026-11-03.mp3",
