@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-05",
+    "day": 12,
+    "file": "detour-2026-11-05.mp3",
+    "title": "役割と物語のあいだで",
+    "description": "朝の静かな時間にAIホストの2人が、ノーベル文学賞作家トニ・モリソンの選択を紐解きながら、仕事や日常の中で自身の言葉を持ち続けることの意味について対話し、静かな余韻を届ける7分間。",
+    "size": 4185836,
+    "duration": 348,
+    "pub_date": "2026-11-05T20:50:55.814982+09:00",
+    "topic_id": "morrison",
+    "category": "ことば",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/literature/1993/morrison/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "c87c4ad948bc880fe1add78c948b37e801eb4ad5cc435cc9c565a3fb0db532ef",
+        "retrieved_at": "2026-11-05T11:50:56.170478+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/literature/1993/morrison/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "15a6ddc9173b8edcc9217d67a739506b066e880d9a2ce12944b0fd567ff384b9",
+        "retrieved_at": "2026-11-05T11:50:56.380018+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "day": 11,
     "file": "detour-2026-11-04.mp3",
