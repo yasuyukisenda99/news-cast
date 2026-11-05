@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Nov 2026 13:56:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 02:02:34 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2026年11月05日（Thu）朝のAI・業界ニュース便：AI収益化の現実と社会インフラを巡る摩擦</title>
+      <description>HubSpotの決算に見るAI移行の現実やUberの実利用データから、実用化とマネタイズの過渡期を分析。政治資金やデータセンター建設を巡る摩擦まで深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-05.mp3" length="6308972" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-05.mp3</guid>
+      <pubDate>Thu, 05 Nov 2026 11:01:12 +0900</pubDate>
+      <itunes:duration>08:45</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年11月04日（Wed）</title>
       <description>AI急増に伴うデータセンターの電力不足とジェットエンジン転用問題、そしてAnthropicが取り組むモデル身元証明システム「FlashProve」を中心に、AIインフラと信頼性の課題を議論します。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-23.mp3</guid>
       <pubDate>Fri, 23 Oct 2026 09:14:46 +0900</pubDate>
       <itunes:duration>08:22</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便：2026年10月22日（Thu）AIエージェント時代のコマース攻防と検索の地殻変動</title>
-      <description>2026年10月22日の最新AIニュースを解説。AIエージェントを拒むAmazonと迎えるWalmartの対立、Google検索シェア低下に見るGEOシフト、そしてAI自身が開発したコードモデルの台頭まで深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-22.mp3" length="5464845" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-22.mp3</guid>
-      <pubDate>Thu, 22 Oct 2026 09:19:16 +0900</pubDate>
-      <itunes:duration>07:35</itunes:duration>
     </item>
   </channel>
 </rss>
