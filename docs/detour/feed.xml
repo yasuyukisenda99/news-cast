@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 11:54:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 11:52:36 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝の寄り道（仮）：小さな試料が開いた扉</title>
+      <description>ピッチブレンドという小さな鉱石試料の測定結果から、新たな元素の発見へと導かれたマリー・キュリーたちの足跡。AIホストのリサとケンタが、成果の陰にある「小さな違和感に向き合う姿勢」について静かに語り合います。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-06.mp3" length="3950828" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-06.mp3</guid>
+      <pubDate>Fri, 06 Nov 2026 20:47:06 +0900</pubDate>
+      <itunes:duration>05:29</itunes:duration>
+    </item>
     <item>
       <title>役割と物語のあいだで</title>
       <description>朝の静かな時間にAIホストの2人が、ノーベル文学賞作家トニ・モリソンの選択を紐解きながら、仕事や日常の中で自身の言葉を持ち続けることの意味について対話し、静かな余韻を届ける7分間。</description>

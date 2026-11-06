@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-06",
+    "day": 13,
+    "file": "detour-2026-11-06.mp3",
+    "title": "朝の寄り道（仮）：小さな試料が開いた扉",
+    "description": "ピッチブレンドという小さな鉱石試料の測定結果から、新たな元素の発見へと導かれたマリー・キュリーたちの足跡。AIホストのリサとケンタが、成果の陰にある「小さな違和感に向き合う姿勢」について静かに語り合います。",
+    "size": 3950828,
+    "duration": 329,
+    "pub_date": "2026-11-06T20:47:06.770820+09:00",
+    "topic_id": "curie",
+    "category": "発見",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/physics/1903/marie-curie/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "d283fd9028fd6279c788a3b521eadd6446f148997ff0ae5ae700c0c7e746cbd7",
+        "retrieved_at": "2026-11-06T11:47:07.052509+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "26202a3dd228136d922d3c57a3daba012ba2f2e6b59a2f48cf80a437f6a3d3d1",
+        "retrieved_at": "2026-11-06T11:47:07.182949+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-05",
     "day": 12,
     "file": "detour-2026-11-05.mp3",
