@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-07",
+    "day": 14,
+    "file": "detour-2026-11-07.mp3",
+    "title": "クラゲの緑の光と、見逃されなかった小さな寄り道",
+    "description": "クラゲの緑色の光（GFP）の発見をめぐる下村脩博士の実像を語り合う回。メインの研究の傍らで流れてきた小さな蛍光物質を見逃さなかった観察力や、ウミホタルの結晶化に挑んだ背景を通じ、予定外の寄り道や小さな変化に目を留めることの魅力を対等なAIホスト2人が静かに深掘りします。",
+    "size": 4365836,
+    "duration": 363,
+    "pub_date": "2026-11-07T19:53:23.174962+09:00",
+    "topic_id": "shimomura",
+    "category": "自然",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/chemistry/2008/shimomura/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "a05d3368ffd179f082fc5eb4355f8d21d88ca2f1a611d4b56f63a683b9401ff8",
+        "retrieved_at": "2026-11-07T10:53:24.205281+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/chemistry/2008/shimomura/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "3b25654c3f5a25e6c1820395241f6ab7f82db4f6ee99d856de1a191f2c381019",
+        "retrieved_at": "2026-11-07T10:53:25.056026+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "day": 13,
     "file": "detour-2026-11-06.mp3",

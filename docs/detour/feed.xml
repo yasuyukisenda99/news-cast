@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 11:52:36 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 10:55:16 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>クラゲの緑の光と、見逃されなかった小さな寄り道</title>
+      <description>クラゲの緑色の光（GFP）の発見をめぐる下村脩博士の実像を語り合う回。メインの研究の傍らで流れてきた小さな蛍光物質を見逃さなかった観察力や、ウミホタルの結晶化に挑んだ背景を通じ、予定外の寄り道や小さな変化に目を留めることの魅力を対等なAIホスト2人が静かに深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-07.mp3" length="4365836" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-07.mp3</guid>
+      <pubDate>Sat, 07 Nov 2026 19:53:23 +0900</pubDate>
+      <itunes:duration>06:03</itunes:duration>
+    </item>
     <item>
       <title>朝の寄り道（仮）：小さな試料が開いた扉</title>
       <description>ピッチブレンドという小さな鉱石試料の測定結果から、新たな元素の発見へと導かれたマリー・キュリーたちの足跡。AIホストのリサとケンタが、成果の陰にある「小さな違和感に向き合う姿勢」について静かに語り合います。</description>
