@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 01:55:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:24:06 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年11月07日 Sat）巨額調達と現場のコスト意識が示すAI市場の転換点</title>
+      <description>2026年11月7日放送。OpenAIの1.25兆ドル評価での大型調達とRamp社が明かす企業AI支出の停滞、米中間選挙でのデータセンター規制などを通じ、AI業界の熱狂と現場の実態を掘り下げます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-07.mp3" length="5840396" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-07.mp3</guid>
+      <pubDate>Sat, 07 Nov 2026 10:22:42 +0900</pubDate>
+      <itunes:duration>08:06</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年11月06日（Fri）OpenAIの2027年IPO観測と数学の形式検証</title>
       <description>2026年11月6日の注目ニュースを解説。OpenAIの2027年IPO視野の背景にあるエンタープライズ戦略や、AIによる数学証明の検証を進めるAxiom Mathの取り組み、Dropboxのインフラ買収などを研究者とジャーナリストの視点で深掘りします。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-25.mp3</guid>
       <pubDate>Sun, 25 Oct 2026 08:51:38 +0900</pubDate>
       <itunes:duration>08:36</itunes:duration>
-    </item>
-    <item>
-      <title>2026年10月24日（Sat）朝のAI・業界ニュース便：OpenAIのライブネット学習停止と揺らぐウェブエコシステム</title>
-      <description>OpenAIが重大なリスクを理由にライブインターネットでのモデル学習を取りやめる方針を発表。その技術的必然性と、HubSpot株価急落やSEOの変容に代表されるデジタルマーケティング産業への波及効果、さらに自動運転の最新動向まで議論します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-24.mp3" length="5361452" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-24.mp3</guid>
-      <pubDate>Sat, 24 Oct 2026 09:10:54 +0900</pubDate>
-      <itunes:duration>07:26</itunes:duration>
     </item>
   </channel>
 </rss>
