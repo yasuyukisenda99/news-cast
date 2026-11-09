@@ -54,7 +54,8 @@ class DetourTests(unittest.TestCase):
         steps = workflow['jobs']['generate']['steps']
         guard = next(step['run'] for step in steps if step.get('id') == 'window')
         code = '\n'.join(guard.splitlines()[1:-1])
-        for days, expected in ((0, 'true'), (13, 'true'), (14, 'false'), (-1, 'false')):
+        # 期限はなく、開始日以降ならいつでも動く。開始日より前は動かない
+        for days, expected in ((0, 'true'), (13, 'true'), (14, 'true'), (400, 'true'), (-1, 'false')):
             start = (dt.datetime.now(shared.JST).date() - dt.timedelta(days=days)).isoformat()
             output = self.root / f'window-{days}.txt'
             env = dict(os.environ, DETOUR_START_DATE=start, GITHUB_OUTPUT=str(output))
@@ -65,8 +66,10 @@ class DetourTests(unittest.TestCase):
                 subprocess.run(['bash', '-n'], input=step['run'], text=True, check=True)
 
     def test_calendar_window_and_disabled(self):
+        # 開始日以降は何日目でも作る。開始日より前と、未設定のときは作らない
         for day, expected in [(dt.date(2026,10,31),None),(dt.date(2026,11,1),1),
-                              (dt.date(2026,11,14),14),(dt.date(2026,11,15),None)]:
+                              (dt.date(2026,11,14),14),(dt.date(2026,11,15),15),
+                              (dt.date(2027,11,1),366)]:
             self.assertEqual(detour.experiment_day('2026-11-01',day),expected)
         self.assertIsNone(detour.experiment_day(None, self.today.date()))
         with patch.object(detour, 'collect_story') as collect:
@@ -184,6 +187,59 @@ class DetourTests(unittest.TestCase):
             claim['evidence'] = 'A sentence that never appears anywhere in the source.'
         with self.assertRaises(ValueError):
             detour.validate_episode(fabricated,self.cfg,self.sources)
+
+    def test_wikipedia_source_is_fetched_as_clean_text(self):
+        """Wikipediaは記事URLを掲げたまま、本文だけをAPIから取る"""
+        import types
+        topics = json.loads((detour.ROOT / 'config/detour-topics.json').read_text())
+        source = next(t for t in topics if t['id'] == 'ino')['sources'][0]
+        self.assertIn('ja.wikipedia.org/wiki/', source['url'])
+        self.assertIn('action=query', detour._fetch_url(source))
+
+        body = ('伊能忠敬は江戸時代の商人・測量家である。' + '本文が続く。' * 300
+                + '\n== 脚注 ==\n根拠に使いたくない節\n== 外部リンク ==\nhttp://example.com')
+        class Response:
+            status_code = 200
+            headers = {'Content-Type': 'application/json'}
+            def raise_for_status(self): pass
+            def iter_content(self, n):
+                yield json.dumps({'query': {'pages': [{'extract': body}]}}).encode()
+            def __enter__(self): return self
+            def __exit__(self, *a): pass
+        real = detour.requests
+        try:
+            detour.requests = types.SimpleNamespace(
+                get=lambda *a, **k: Response(), RequestException=Exception)
+            got = detour.fetch_source(source)
+            self.assertEqual(got['url'], source['url'])      # 聴き手に示すのは記事
+            self.assertNotIn('脚注', got['text'])            # 根拠には使わない
+            self.assertNotIn('外部リンク', got['text'])
+            detour.requests = types.SimpleNamespace(
+                get=lambda *a, **k: Response(), RequestException=Exception)
+            with self.assertRaises(ValueError):              # 許可外の情報源
+                detour.fetch_source({'url': 'https://example.com/a'})
+        finally:
+            detour.requests = real
+
+    def test_topic_catalog_is_varied_and_reusable(self):
+        """題材が偏っておらず、一巡しても止まらない"""
+        import collections
+        topics = json.loads((detour.ROOT / 'config/detour-topics.json').read_text())
+        self.assertEqual(len({t['id'] for t in topics}), len(topics))
+        hosts = collections.Counter(
+            s['url'].split('/')[2] for t in topics for s in t['sources'])
+        self.assertGreaterEqual(len(hosts), 3)
+        self.assertLess(max(hosts.values()) / sum(hosts.values()), 0.6,
+                        f'情報源が1か所に偏っています: {hosts}')
+        self.assertGreaterEqual(len(collections.Counter(t['category'] for t in topics)), 5)
+
+        meta = [{'topic_id': t['id'], 'category': t['category'],
+                 'date': f'2026-01-{i % 28 + 1:02d}'} for i, t in enumerate(topics)]
+        with patch.object(detour, 'fetch_source',
+                          side_effect=lambda s: {**s, 'text': 'x' * 2000,
+                                                 'sha256': 'h', 'retrieved_at': 't'}):
+            topic, sources = detour.collect_story(topics, meta)
+        self.assertTrue(topic['id'])          # 使い切っても題材を返す
 
     def test_html_parser_excludes_navigation_and_scripts(self):
         parser = detour.ArticleText()

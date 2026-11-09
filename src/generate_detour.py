@@ -14,7 +14,7 @@ import re
 import shutil
 import tempfile
 import time
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 import requests
 import yaml
@@ -23,7 +23,13 @@ import generate_podcast as shared
 ROOT = shared.ROOT
 OUT = ROOT / 'docs' / 'detour'
 ASSETS = ROOT / 'src' / 'detour_assets'
-ALLOWED_HOSTS = {'www.nobelprize.org'}
+ALLOWED_HOSTS = {'www.nobelprize.org', 'ja.wikipedia.org', 'en.wikipedia.org'}
+USER_AGENT = ('news-cast-detour/1.0 (personal daily podcast; '
+              '+https://yasuyukisenda99.github.io/news-cast/detour/)')
+# 根拠に向かない節（脚注・参考文献・関連項目など）はここから先を捨てる
+_TAIL = re.compile(
+    r'\n==+ ?(?:脚注|注釈|出典|参考文献|関連項目|外部リンク|参考書籍|'
+    r'References|Notes|See also|External links|Further reading|Bibliography|Citations)')
 MIN_EVIDENCE_CHARS = 20      # 短すぎる引用は根拠にならない
 MAX_EVIDENCE_WORDS = 45      # 英語の伝記文は30〜40語が普通。長文の丸写しだけを防ぐ
 MIN_VERIFIED_CLAIMS = 3      # 資料で裏づけが取れた事実の下限
@@ -38,19 +44,18 @@ def load_config():
         cfg['gemini'][key] = value
     if cfg['gemini'].get('cloud_tts', {}).get('sample_rate', 24000) != 24000:
         raise ValueError('共通MP3変換に合わせ sample_rate は24000にしてください')
-    if cfg['experiment']['days'] != 14:
-        raise ValueError('この実験の期間は14日です')
     if not cfg['podcast']['base_url'].endswith('/detour'):
         raise ValueError('新番組のbase_urlは /detour で終わる必要があります')
     return cfg
 
 
 def experiment_day(start, today):
+    """開始日からの通算日。開始日が未設定か、まだ来ていなければ None（＝作らない）。"""
     if not start:
         return None
     start = dt.date.fromisoformat(str(start))
     day = (today - start).days + 1
-    return day if 1 <= day <= 14 else None
+    return day if day >= 1 else None
 
 
 class ArticleText(HTMLParser):
@@ -87,25 +92,51 @@ class ArticleText(HTMLParser):
         return '\n'.join(re.sub(r'\s+', ' ', x).strip() for x in ''.join(self.parts).splitlines() if x.strip())
 
 
+def _fetch_url(source):
+    """実際に取りに行くURL。Wikipediaは整形済み本文が返るAPIを使う。
+
+    掲載用のURL（記事ページ）とは別にする。聴き手に示すのは記事、
+    機械が読むのは余計な飾りのない本文、という住み分け。
+    """
+    spec = source.get('fetch') or {}
+    if spec.get('kind') == 'wikipedia':
+        return (f"https://{spec['lang']}.wikipedia.org/w/api.php"
+                '?action=query&prop=extracts&explaintext=1&format=json'
+                '&formatversion=2&redirects=1&titles=' + quote(spec['title']))
+    return source['url']
+
+
 def fetch_source(source):
-    url = source['url']
-    if urlparse(url).scheme != 'https' or urlparse(url).hostname not in ALLOWED_HOSTS:
-        raise ValueError('許可されていない情報源です')
+    url = _fetch_url(source)
+    is_api = (source.get('fetch') or {}).get('kind') == 'wikipedia'
+    # 掲載用URLも取得用URLも、どちらも許可した情報源であること
+    for check in {url, source['url']}:
+        parsed = urlparse(check)
+        if parsed.scheme != 'https' or parsed.hostname not in ALLOWED_HOSTS:
+            raise ValueError('許可されていない情報源です')
     # Reject redirects rather than following external/unreviewed source locations.
     response = requests.get(url, timeout=(10, 40), allow_redirects=False,
-                            headers={'User-Agent': 'news-cast-detour/1.0'}, stream=True)
+                            headers={'User-Agent': USER_AGENT}, stream=True)
     with response:
         response.raise_for_status()
-        if response.status_code != 200 or 'html' not in response.headers.get('Content-Type', ''):
-            raise ValueError('資料がHTML本文として取得できません')
+        want = 'json' if is_api else 'html'
+        if response.status_code != 200 or want not in response.headers.get('Content-Type', ''):
+            raise ValueError('資料が想定した形式で取得できません')
         body = bytearray()
         for chunk in response.iter_content(65536):
             body.extend(chunk)
             if len(body) > 2_000_000:
                 raise ValueError('資料が大きすぎます')
-    parser = ArticleText()
-    parser.feed(bytes(body).decode('utf-8', errors='replace'))
-    text = parser.text()
+    raw = bytes(body).decode('utf-8', errors='replace')
+    if is_api:
+        pages = (json.loads(raw).get('query') or {}).get('pages') or []
+        if not pages or pages[0].get('missing') or not pages[0].get('extract'):
+            raise ValueError('該当する記事が見つかりません')
+        text = re.sub(r'\n{2,}', '\n', _TAIL.split(pages[0]['extract'])[0]).strip()
+    else:
+        parser = ArticleText()
+        parser.feed(raw)
+        text = parser.text()
     # Avoid turning link-only RSS blurbs or error pages into a 7-minute story.
     if len(text) < 1000:
         raise ValueError('根拠となる本文が不足しています')
@@ -113,11 +144,17 @@ def fetch_source(source):
     return {**source, 'text': text, 'sha256': hashlib.sha256(text.encode()).hexdigest(),
             'retrieved_at': dt.datetime.now(dt.timezone.utc).isoformat()}
 
-
 def collect_story(topics, meta):
     used = {ep['topic_id'] for ep in meta}
     recent = {ep.get('category') for ep in meta[:2]}
     candidates = [t for t in topics if t['id'] not in used]
+    if not candidates:
+        # 一巡したら、いちばん前に取り上げたものから順に戻る（資料は毎回取り直す）
+        last = {}
+        for ep in meta:                      # metaは新しい順
+            last.setdefault(ep['topic_id'], ep['date'])
+        candidates = sorted(topics, key=lambda t: last.get(t['id'], ''))
+        print('[detour] 題材が一巡したため、間隔の空いたものから取り上げます')
     # Editorial hooks are questions, never evidence. Rotate categories, no recency gate.
     candidates.sort(key=lambda t: t['category'] in recent)
     for topic in candidates:
@@ -130,7 +167,7 @@ def collect_story(topics, meta):
         # Biography can fail independently. Require a reasonably substantial source.
         if sources and sum(len(s['text']) for s in sources) >= 1800:
             return topic, sources
-    raise RuntimeError('未使用かつ十分な根拠のある題材がありません。公開しません')
+    raise RuntimeError('十分な根拠のある題材がありません。公開しません')
 
 
 # 活字上の違い（曲がった引用符・ダッシュ・特殊空白）を吸収する

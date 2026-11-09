@@ -1,6 +1,6 @@
 podcast:
   title: 朝の寄り道（仮）
-  description: ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。
+  description: ふたりのAIホストと、実在する人・もの・土地の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ番組です。
   author: news-cast bot
   base_url: https://yasuyukisenda99.github.io/news-cast/detour
   language: ja
@@ -9,7 +9,6 @@ podcast:
   # docs/detour/ 直下に置いたサムネイル
   image: cover-detour.jpg
 experiment:
-  days: 14
   # 空欄では自動生成しない。Actions変数 DETOUR_START_DATE でも指定可能。
   start_date: null
   # 目安（外れても公開する。ログに注意が出るだけ）

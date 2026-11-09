@@ -238,5 +238,1305 @@
         "publisher": "Nobel Prize"
       }
     ]
+  },
+  {
+    "id": "ino",
+    "hook": "五十五歳から地図を描き始めた人",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/伊能忠敬",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "伊能忠敬"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/大日本沿海輿地全図",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "大日本沿海輿地全図"
+        }
+      }
+    ]
+  },
+  {
+    "id": "makino",
+    "hook": "独学の植物学者が歩いた野山",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/牧野富太郎",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "牧野富太郎"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/牧野日本植物図鑑",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "牧野日本植物図鑑"
+        }
+      }
+    ]
+  },
+  {
+    "id": "minakata",
+    "hook": "粘菌に魅せられた博物学者",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/南方熊楠",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "南方熊楠"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/変形菌",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "変形菌"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tanaka",
+    "hook": "からくり人形から機械へ",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/田中久重",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "田中久重"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/万年自鳴鐘",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "万年自鳴鐘"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hiraga",
+    "hook": "発明も戯作もやった人",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/平賀源内",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "平賀源内"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/エレキテル",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "エレキテル"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hokusai",
+    "hook": "九十歳まで描き続けた絵師",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/葛飾北斎",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "葛飾北斎"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/富嶽三十六景",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "富嶽三十六景"
+        }
+      }
+    ]
+  },
+  {
+    "id": "enku",
+    "hook": "十二万体を彫ると誓った僧",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/円空",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "円空"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/円空仏",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "円空仏"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sugihara",
+    "hook": "一枚の書類が開いた道",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/杉原千畝",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "杉原千畝"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/命のビザ",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "命のビザ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lamarr",
+    "hook": "女優が考えた通信の仕組み",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hedy_Lamarr",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Hedy Lamarr"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Frequency-hopping_spread_spectrum",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Frequency-hopping spread spectrum"
+        }
+      }
+    ]
+  },
+  {
+    "id": "anning",
+    "hook": "海辺で化石を拾い続けた人",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mary_Anning",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Mary Anning"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ichthyosaur",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Ichthyosaur"
+        }
+      }
+    ]
+  },
+  {
+    "id": "potter",
+    "hook": "絵本作家とキノコの研究",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Beatrix_Potter",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Beatrix Potter"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Lichen",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Lichen"
+        }
+      }
+    ]
+  },
+  {
+    "id": "merian",
+    "hook": "虫の一生を絵で追いかけた人",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Maria_Sibylla_Merian",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Maria Sibylla Merian"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Metamorphosis",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Metamorphosis"
+        }
+      }
+    ]
+  },
+  {
+    "id": "humboldt",
+    "hook": "山を登りながら世界を測る",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Alexander von Humboldt"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Biogeography",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Biogeography"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lovelace",
+    "hook": "計算する機械に詩を見た人",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Ada Lovelace"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Analytical_engine",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Analytical engine"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tesla",
+    "hook": "交流という選択",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nikola_Tesla",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Nikola Tesla"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "War of the currents"
+        }
+      }
+    ]
+  },
+  {
+    "id": "seacole",
+    "hook": "断られてから自分で行った人",
+    "category": "人物",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mary_Seacole",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Mary Seacole"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Crimean_War",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Crimean War"
+        }
+      }
+    ]
+  },
+  {
+    "id": "washi",
+    "hook": "薄さと強さが両立する紙",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/和紙",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "和紙"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/楮",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "楮"
+        }
+      }
+    ]
+  },
+  {
+    "id": "urushi",
+    "hook": "木の樹液が器になるまで",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/漆",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "漆"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/漆器",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "漆器"
+        }
+      }
+    ]
+  },
+  {
+    "id": "binchotan",
+    "hook": "白くなるまで焼く炭",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/備長炭",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "備長炭"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/木炭",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "木炭"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kanten",
+    "hook": "冬の夜に置き忘れた煮汁から",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/寒天",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "寒天"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/テングサ",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "テングサ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "umami",
+    "hook": "昆布だしの正体を探した実験",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/うま味",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "うま味"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/グルタミン酸ナトリウム",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "グルタミン酸ナトリウム"
+        }
+      }
+    ]
+  },
+  {
+    "id": "katorisenko",
+    "hook": "渦巻きの形にたどり着くまで",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/蚊取線香",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "蚊取線香"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/除虫菊",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "除虫菊"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tatami",
+    "hook": "床に敷くものが規格になる",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/畳",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "畳"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/イグサ",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "イグサ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "velcro",
+    "hook": "犬の毛についた実を顕微鏡で見る",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hook-and-loop_fastener",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Hook-and-loop fastener"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Biomimetics",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Biomimetics"
+        }
+      }
+    ]
+  },
+  {
+    "id": "microwave",
+    "hook": "ポケットのチョコが溶けた日",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Microwave oven"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cavity_magnetron",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Cavity magnetron"
+        }
+      }
+    ]
+  },
+  {
+    "id": "postit",
+    "hook": "うまくつかない接着剤の使い道",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Post-it_Note",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Post-it Note"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Adhesive",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Adhesive"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bessemer",
+    "hook": "空気を吹き込んで鉄を変える",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bessemer_process",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Bessemer process"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Steel",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Steel"
+        }
+      }
+    ]
+  },
+  {
+    "id": "movabletype",
+    "hook": "一字ずつ組み替える発想",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Movable_type",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Movable type"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Printing_press",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Printing press"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ballpoint",
+    "hook": "新聞社で見たインクの乾き方",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ballpoint_pen",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Ballpoint pen"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ink",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Ink"
+        }
+      }
+    ]
+  },
+  {
+    "id": "carbonfiber",
+    "hook": "糸を焼いて強くする",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Carbon_fiber_reinforced_polymer",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Carbon fiber reinforced polymer"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/炭素繊維",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "炭素繊維"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kintsugi",
+    "hook": "割れた器を隠さずに直す",
+    "category": "ものづくり",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/金継ぎ",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "金継ぎ"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/漆",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "漆"
+        }
+      }
+    ]
+  },
+  {
+    "id": "yakusugi",
+    "hook": "千年を超えて立つ杉",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/屋久杉",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "屋久杉"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/屋久島",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "屋久島"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tardigrade",
+    "hook": "乾いても死なない生き物",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tardigrade",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Tardigrade"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cryptobiosis",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Cryptobiosis"
+        }
+      }
+    ]
+  },
+  {
+    "id": "monarch",
+    "hook": "世代を越えて続く渡り",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Monarch_butterfly",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Monarch butterfly"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Animal_migration",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Animal migration"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mycorrhiza",
+    "hook": "木と木をつなぐ地下の糸",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mycorrhizal_network",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Mycorrhizal network"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mycorrhiza",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Mycorrhiza"
+        }
+      }
+    ]
+  },
+  {
+    "id": "aurora",
+    "hook": "空が光る仕組み",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Aurora",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Aurora"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Magnetosphere",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Magnetosphere"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kuroshio",
+    "hook": "島をなぞって流れる暖かい水",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/黒潮",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "黒潮"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/海流",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "海流"
+        }
+      }
+    ]
+  },
+  {
+    "id": "biwako",
+    "hook": "四百万年を生きる湖",
+    "category": "土地",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/琵琶湖",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "琵琶湖"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/古代湖",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "古代湖"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fossamagna",
+    "hook": "日本を East と West に割る線",
+    "category": "土地",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/フォッサマグナ",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "フォッサマグナ"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/糸魚川静岡構造線",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "糸魚川静岡構造線"
+        }
+      }
+    ]
+  },
+  {
+    "id": "aso",
+    "hook": "噴火の跡に人が住む",
+    "category": "土地",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/阿蘇山",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "阿蘇山"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/カルデラ",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "カルデラ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ariake",
+    "hook": "潮が引くと現れる広い干潟",
+    "category": "土地",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/有明海",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "有明海"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/干潟",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "干潟"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sargasso",
+    "hook": "岸のない海",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sargasso_Sea",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Sargasso Sea"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Sargassum",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Sargassum"
+        }
+      }
+    ]
+  },
+  {
+    "id": "baobab",
+    "hook": "幹に水をためる木",
+    "category": "自然",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Adansonia",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Adansonia"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Succulent_plant",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Succulent plant"
+        }
+      }
+    ]
+  },
+  {
+    "id": "satoyama",
+    "hook": "手を入れ続けることで保たれる自然",
+    "category": "土地",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/里山",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "里山"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/雑木林",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "雑木林"
+        }
+      }
+    ]
+  },
+  {
+    "id": "manyoshu",
+    "hook": "名もなき人の歌が残る",
+    "category": "ことば",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/万葉集",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "万葉集"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/万葉仮名",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "万葉仮名"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rosetta",
+    "hook": "三つの文字が並んだ石",
+    "category": "ことば",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Rosetta Stone"
+        }
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Egyptian_hieroglyphs",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Egyptian hieroglyphs"
+        }
+      }
+    ]
+  },
+  {
+    "id": "braille",
+    "hook": "指で読む六つの点",
+    "category": "ことば",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Braille",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Braille"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/点字",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "点字"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shuwa",
+    "hook": "手で話す言語の文法",
+    "category": "ことば",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/日本手話",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "日本手話"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/手話",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "手話"
+        }
+      }
+    ]
+  },
+  {
+    "id": "esperanto",
+    "hook": "誰の母語でもない言葉",
+    "category": "ことば",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Esperanto",
+        "publisher": "Wikipedia (English)",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "en",
+          "title": "Esperanto"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/エスペラント",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "エスペラント"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sekki",
+    "hook": "一年を二十四に分ける",
+    "category": "暮らし",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/二十四節気",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "二十四節気"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/暦",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "暦"
+        }
+      }
+    ]
+  },
+  {
+    "id": "furoshiki",
+    "hook": "一枚の布で何でも包む",
+    "category": "暮らし",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/風呂敷",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "風呂敷"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/包装",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "包装"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sento",
+    "hook": "家に風呂がなかった頃の社交場",
+    "category": "暮らし",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/銭湯",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "銭湯"
+        }
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/温泉",
+        "publisher": "Wikipedia 日本語版",
+        "fetch": {
+          "kind": "wikipedia",
+          "lang": "ja",
+          "title": "温泉"
+        }
+      }
+    ]
   }
 ]
