@@ -233,6 +233,23 @@ class DetourTests(unittest.TestCase):
                         f'情報源が1か所に偏っています: {hosts}')
         self.assertGreaterEqual(len(collections.Counter(t['category'] for t in topics)), 5)
 
+        # 直近が1つの情報源に固まらないこと
+        import datetime as _dt
+        sim, hosts = [], []
+        with patch.object(detour, 'fetch_source',
+                          side_effect=lambda s: {**s, 'text': 'x' * 2000,
+                                                 'sha256': 'h', 'retrieved_at': 't'}):
+            for i in range(12):
+                day = _dt.date(2026, 11, 10) + _dt.timedelta(days=i)
+                t, _ = detour.collect_story(topics, sim, day)
+                hosts.append(detour._host(t))
+                sim.insert(0, {'topic_id': t['id'], 'category': t['category'],
+                               'date': str(day),
+                               'sources': [{'url': x['url']} for x in t['sources']]})
+        self.assertLessEqual(max(collections.Counter(hosts).values()), 7,
+                             f'12日のうち同じ情報源に偏っています: {hosts}')
+        self.assertGreaterEqual(len(set(hosts)), 3, hosts)
+
         meta = [{'topic_id': t['id'], 'category': t['category'],
                  'date': f'2026-01-{i % 28 + 1:02d}'} for i, t in enumerate(topics)]
         with patch.object(detour, 'fetch_source',

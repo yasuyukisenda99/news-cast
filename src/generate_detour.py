@@ -9,6 +9,7 @@ import unicodedata
 from html.parser import HTMLParser
 import json
 import os
+import random
 from pathlib import Path
 import re
 import shutil
@@ -144,19 +145,44 @@ def fetch_source(source):
     return {**source, 'text': text, 'sha256': hashlib.sha256(text.encode()).hexdigest(),
             'retrieved_at': dt.datetime.now(dt.timezone.utc).isoformat()}
 
-def collect_story(topics, meta):
+def _host(topic):
+    """題材の主たる情報源のドメイン。分からなければ空文字。"""
+    for source in topic.get('sources') or []:
+        url = source.get('url')
+        if url:
+            return url.split('/')[2]
+    return ''
+
+
+def collect_story(topics, meta, today=None):
+    """今日の題材を選ぶ。
+
+    カタログの並び順で拾うと情報源が固まるため、直近で使った分野と
+    情報源を避けてから選ぶ。同点は日付で決まる乱数で散らす
+    （同じ日に再実行しても同じ題材になる）。
+    """
     used = {ep['topic_id'] for ep in meta}
-    recent = {ep.get('category') for ep in meta[:2]}
+    recent = meta[:4]
+    recent_categories = {ep.get('category') for ep in recent}
+    recent_hosts = {s['url'].split('/')[2]
+                    for ep in recent for s in (ep.get('sources') or [])
+                    if s.get('url')}
+
     candidates = [t for t in topics if t['id'] not in used]
     if not candidates:
-        # 一巡したら、いちばん前に取り上げたものから順に戻る（資料は毎回取り直す）
+        # 一巡したら、いちばん間隔の空いたものから戻る（資料は毎回取り直す）
         last = {}
         for ep in meta:                      # metaは新しい順
             last.setdefault(ep['topic_id'], ep['date'])
         candidates = sorted(topics, key=lambda t: last.get(t['id'], ''))
         print('[detour] 題材が一巡したため、間隔の空いたものから取り上げます')
-    # Editorial hooks are questions, never evidence. Rotate categories, no recency gate.
-    candidates.sort(key=lambda t: t['category'] in recent)
+
+    seed = f"{today or dt.date.today()}:{len(meta)}"
+    rng = random.Random(seed)
+    # Editorial hooks are questions, never evidence.
+    candidates.sort(key=lambda t: (t['category'] in recent_categories,
+                                   _host(t) in recent_hosts,
+                                   rng.random()))
     for topic in candidates:
         sources = []
         for source in topic['sources']:
@@ -168,7 +194,6 @@ def collect_story(topics, meta):
         if sources and sum(len(s['text']) for s in sources) >= 1800:
             return topic, sources
     raise RuntimeError('十分な根拠のある題材がありません。公開しません')
-
 
 # 活字上の違い（曲がった引用符・ダッシュ・特殊空白）を吸収する
 _TYPO = str.maketrans({
@@ -403,7 +428,7 @@ def run(cfg, start, today, *, skip_tts=False, out=OUT):
     if not skip_tts and cfg['gemini']['tts_provider'] == 'cloud' and not os.environ.get('GCP_SA_KEY'):
         raise ValueError('GCP_SA_KEY が必要です')
     topics = json.loads((ROOT / 'config/detour-topics.json').read_text())
-    topic, sources = collect_story(topics, meta)
+    topic, sources = collect_story(topics, meta, today.date())
     budget = float(cfg['experiment'].get('script_budget_minutes', 20))
     episode = build_episode(cfg, topic, sources, api_key,
                             deadline=time.monotonic() + budget * 60)
