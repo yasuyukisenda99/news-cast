@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-10",
+    "day": 17,
+    "file": "detour-2026-11-10.mp3",
+    "title": "山を登りながら世界を測る",
+    "description": "19世紀初頭の探検家フンボルトが、標高や温度、自然の繋がりをどのように観察していたのかを語り合います。過酷な登頂や感電の実験、インコから受け継いだ失われた言葉など、一つの大きな生き物として地球を見つめた視点の余韻を味わう約7分間です。",
+    "size": 4454252,
+    "duration": 371,
+    "pub_date": "2026-11-10T00:13:03.194623+09:00",
+    "topic_id": "humboldt",
+    "category": "人物",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
+        "publisher": "Wikipedia (English)",
+        "sha256": "60c33c81524355bd98c5dc0ff7b6cf9db7fc0b5a5d184939f55d42b4f00e994e",
+        "retrieved_at": "2026-11-09T15:13:03.560538+00:00"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Biogeography",
+        "publisher": "Wikipedia (English)",
+        "sha256": "e02caa2b914fc676f63c02fcc95ce440ad4f0b476caeed8314e5ca47a789d684",
+        "retrieved_at": "2026-11-09T15:13:03.788145+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "day": 16,
     "file": "detour-2026-11-09.mp3",

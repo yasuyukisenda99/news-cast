@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人・もの・土地の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ番組です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 12:16:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 15:18:05 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>山を登りながら世界を測る</title>
+      <description>19世紀初頭の探検家フンボルトが、標高や温度、自然の繋がりをどのように観察していたのかを語り合います。過酷な登頂や感電の実験、インコから受け継いだ失われた言葉など、一つの大きな生き物として地球を見つめた視点の余韻を味わう約7分間です。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-10.mp3" length="4454252" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-10.mp3</guid>
+      <pubDate>Tue, 10 Nov 2026 00:13:03 +0900</pubDate>
+      <itunes:duration>06:11</itunes:duration>
+    </item>
     <item>
       <title>二度の発見をつないだ選択</title>
       <description>ノーベル物理学賞を二度受賞したジョン・バーディーン。半導体と超伝導という巨大な功績の陰には、実務と理論の間を行き来しながら自らの関心に向き合い続けた軌跡がありました。AIホストのふたりが、彼の歩みから見えてくる選択の味わい深さを語り合います。</description>
