@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 01:01:19 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 01:21:45 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年11月09日（Mon）AI検索が塗り替える情報流通とインフラの現実</title>
+      <description>ChatGPTの引用とGoogle検索の大きな乖離から見えるGEO（生成AI最適化）の台頭とSaaS業界への影響、さらにデータセンター売却や半導体を巡る地政学リスクを読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-09.mp3" length="6169868" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-09.mp3</guid>
+      <pubDate>Mon, 09 Nov 2026 10:20:26 +0900</pubDate>
+      <itunes:duration>08:34</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年11月08日（Sun）OpenAIの1.25兆ドル評価とデータセンターを取り巻く政治的逆風</title>
       <description>OpenAIの110億ドル追加調達と1.25兆ドル評価額の報道、そして米中間選挙後に浮き彫りとなったデータセンター開発への逆風とGoogleの動きを深掘り。検索の地殻変動を示すGEO調査やSaaSの減速も解説します。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-27.mp3</guid>
       <pubDate>Tue, 27 Oct 2026 10:01:31 +0900</pubDate>
       <itunes:duration>06:43</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便：2026年10月26日（Mon）「AI投資の冷徹な現実と実利への転換」</title>
-      <description>2026年10月26日の放送では、アポロのエコノミストが指摘した「テック企業以外へのAI投資効果ゼロ」という厳しい現実を検証。さらにモデルの政治的バイアス調査やBlockのローカル音声モデルなど、最新ニュースを深く読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-26.mp3" length="6588908" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-26.mp3</guid>
-      <pubDate>Mon, 26 Oct 2026 20:16:37 +0900</pubDate>
-      <itunes:duration>09:08</itunes:duration>
     </item>
   </channel>
 </rss>
