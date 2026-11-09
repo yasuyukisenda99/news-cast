@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Check calendar window before installing dependencies
+      - name: Check the show is running before installing dependencies
         id: window
         env:
           DETOUR_START_DATE: ${{ vars.DETOUR_START_DATE }}
@@ -36,13 +36,13 @@ jobs:
           today = dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date()
           day = (today - dt.date.fromisoformat(os.environ['DETOUR_START_DATE'])).days
           with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
-              output.write(f'active={str(0 <= day < 14).lower()}\n')
+              output.write(f'active={str(day >= 0).lower()}\n')
           PYTHON
       - if: steps.window.outputs.active == 'true'
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - if: steps.window.outputs.active == 'true'
         run: pip install -r requirements.txt
-      - name: Generate only during the 14-day window
+      - name: Generate today's episode
         if: steps.window.outputs.active == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
