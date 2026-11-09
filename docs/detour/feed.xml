@@ -2,15 +2,23 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>朝の寄り道（仮）</title>
-    <description>ふたりのAIホストと、実在する人や発見の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ14日間の実験です。</description>
+    <description>ふたりのAIホストと、実在する人・もの・土地の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ番組です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 10:55:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 12:16:07 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>二度の発見をつないだ選択</title>
+      <description>ノーベル物理学賞を二度受賞したジョン・バーディーン。半導体と超伝導という巨大な功績の陰には、実務と理論の間を行き来しながら自らの関心に向き合い続けた軌跡がありました。AIホストのふたりが、彼の歩みから見えてくる選択の味わい深さを語り合います。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-09.mp3" length="3965228" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-09.mp3</guid>
+      <pubDate>Mon, 09 Nov 2026 21:12:06 +0900</pubDate>
+      <itunes:duration>05:30</itunes:duration>
+    </item>
     <item>
       <title>クラゲの緑の光と、見逃されなかった小さな寄り道</title>
       <description>クラゲの緑色の光（GFP）の発見をめぐる下村脩博士の実像を語り合う回。メインの研究の傍らで流れてきた小さな蛍光物質を見逃さなかった観察力や、ウミホタルの結晶化に挑んだ背景を通じ、予定外の寄り道や小さな変化に目を留めることの魅力を対等なAIホスト2人が静かに深掘りします。</description>

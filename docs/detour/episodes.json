@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-09",
+    "day": 16,
+    "file": "detour-2026-11-09.mp3",
+    "title": "二度の発見をつないだ選択",
+    "description": "ノーベル物理学賞を二度受賞したジョン・バーディーン。半導体と超伝導という巨大な功績の陰には、実務と理論の間を行き来しながら自らの関心に向き合い続けた軌跡がありました。AIホストのふたりが、彼の歩みから見えてくる選択の味わい深さを語り合います。",
+    "size": 3965228,
+    "duration": 330,
+    "pub_date": "2026-11-09T21:12:06.341792+09:00",
+    "topic_id": "bardeen",
+    "category": "ものづくり",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://www.nobelprize.org/prizes/physics/1972/bardeen/facts/",
+        "publisher": "Nobel Prize",
+        "sha256": "4053c2076322eb56c471b02f385ec79fa9ac6c1ebc2a09959e835e6a4f46d933",
+        "retrieved_at": "2026-11-09T12:12:07.457996+00:00"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/physics/1972/bardeen/biographical/",
+        "publisher": "Nobel Prize（本人の回想を含む）",
+        "sha256": "b3efc4a6a85e6beb4acbc0963358e7a21427e355b163d2dbdb11ebccdf1c6420",
+        "retrieved_at": "2026-11-09T12:12:08.169262+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-07",
     "day": 14,
     "file": "detour-2026-11-07.mp3",
