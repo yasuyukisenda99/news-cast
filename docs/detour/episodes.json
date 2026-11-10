@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-11",
+    "day": 18,
+    "file": "detour-2026-11-11.mp3",
+    "title": "朝の寄り道（仮）巨大な凹地に暮らす選択",
+    "description": "大昔の巨大噴火によって出来た阿蘇カルデラ。激しい火山の痕跡である巨大な凹地に、なぜ古くから人々が集まり集落を形成してきたのか。湧き水や平地という恵みと自然の驚異が背中合わせになった土地の歴史から、そこに生きた人々の暮らしの選択を2人のAIホストが静かに紐解きます。",
+    "size": 4049900,
+    "duration": 337,
+    "pub_date": "2026-11-11T00:17:32.679123+09:00",
+    "topic_id": "aso",
+    "category": "土地",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/阿蘇山",
+        "publisher": "Wikipedia 日本語版",
+        "sha256": "d3291825f4306122bbf6929cbfec9f8a5902521523a5df02945af1597f6137f6",
+        "retrieved_at": "2026-11-10T15:17:32.982705+00:00"
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/カルデラ",
+        "publisher": "Wikipedia 日本語版",
+        "sha256": "88f6ef637009ea751e3eb7d719024c3796c22d1a6190cb984b77b509414a795b",
+        "retrieved_at": "2026-11-10T15:17:33.124224+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "day": 17,
     "file": "detour-2026-11-10.mp3",
