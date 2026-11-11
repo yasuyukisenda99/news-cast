@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 03:55:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 01:34:02 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年11月11日（Wed）OpenAIが仕掛ける「Business Hub」と生成AI時代のプラットフォーム競争</title>
+      <description>2026年11月11日号。OpenAIによるChatGPT内の企業向け新機能展開がもたらす検索・GEO業界への衝撃を深掘り。Anthropicの会議支援ツールやNY州のAI規制法など最新動向を研究者とジャーナリストの視点で読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-11.mp3" length="5502860" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-11.mp3</guid>
+      <pubDate>Wed, 11 Nov 2026 10:32:41 +0900</pubDate>
+      <itunes:duration>07:38</itunes:duration>
+    </item>
     <item>
       <title>2026年11月10日（Tue）朝のAI・業界ニュース便：AnthropicのIPO観測と激変するAI検索エコシステム</title>
       <description>AnthropicのIPO計画と新型モデル投入、Google AI Overviewsがもたらす検索クリックの変化とGEO対策の台頭、NVIDIAを巡る混乱など、2026年秋のAI業界の地殻変動を研究者とジャーナリストの視点から読み解きます。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-29.mp3</guid>
       <pubDate>Thu, 29 Oct 2026 10:25:20 +0900</pubDate>
       <itunes:duration>08:41</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便（2026年10月28日 Wed）</title>
-      <description>OpenAIを揺るがす服薬指導訴訟とエージェントの安全性、HubSpot格下げに見るAIマネタイズの壁、Google Genie 4など最新動向を深掘り解説。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-28.mp3" length="6983468" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-28.mp3</guid>
-      <pubDate>Wed, 28 Oct 2026 09:48:50 +0900</pubDate>
-      <itunes:duration>09:41</itunes:duration>
     </item>
   </channel>
 </rss>
