@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:34:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 03:18:07 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年11月12日（Thu）: Nvidiaトップ激震とAIインフラの地殻変動</title>
+      <description>2026年11月12日（Thu）のニュース。Nvidiaのジェンセン・ファンCEOを巡る解任報道と国家安全保障上の疑惑、AIデータセンターの物理的限界、新興チップ企業の台頭など、AIインフラを取り巻く変化を深掘りします。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-12.mp3" length="4671404" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-12.mp3</guid>
+      <pubDate>Thu, 12 Nov 2026 12:17:06 +0900</pubDate>
+      <itunes:duration>06:29</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年11月11日（Wed）OpenAIが仕掛ける「Business Hub」と生成AI時代のプラットフォーム競争</title>
       <description>2026年11月11日号。OpenAIによるChatGPT内の企業向け新機能展開がもたらす検索・GEO業界への衝撃を深掘り。Anthropicの会議支援ツールやNY州のAI規制法など最新動向を研究者とジャーナリストの視点で読み解きます。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-10-30.mp3</guid>
       <pubDate>Fri, 30 Oct 2026 10:25:33 +0900</pubDate>
       <itunes:duration>09:10</itunes:duration>
-    </item>
-    <item>
-      <title>2026年10月29日（Thu）朝のAI・業界ニュース便：巨大テック決算が明かすAI投資の回収フェーズ</title>
-      <description>MicrosoftのAzure売上初公開とOpenAIとの巨額取引、GoogleのAI検索広告拡大を取り上げ、AIインフラ投資が実際のビジネス収益へと転換する現場の構造変化と課題を読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-10-29.mp3" length="6264620" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-10-29.mp3</guid>
-      <pubDate>Thu, 29 Oct 2026 10:25:20 +0900</pubDate>
-      <itunes:duration>08:41</itunes:duration>
     </item>
   </channel>
 </rss>
