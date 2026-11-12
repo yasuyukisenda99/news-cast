@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人・もの・土地の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ番組です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 15:20:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 12:12:35 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>手と表情でつむぐ立体的な言葉</title>
+      <description>朝の7分間、AIホストのリサとケンタが手話の豊かな文法構造について語り合います。手の動きだけでなく、表情や口の形、空間の使い方が言葉の仕組みとして働く面白さに触れ、身近なコミュニケーションの奥行きを味わう対話です。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-12.mp3" length="4395212" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-12.mp3</guid>
+      <pubDate>Thu, 12 Nov 2026 21:09:38 +0900</pubDate>
+      <itunes:duration>06:06</itunes:duration>
+    </item>
     <item>
       <title>朝の寄り道（仮）巨大な凹地に暮らす選択</title>
       <description>大昔の巨大噴火によって出来た阿蘇カルデラ。激しい火山の痕跡である巨大な凹地に、なぜ古くから人々が集まり集落を形成してきたのか。湧き水や平地という恵みと自然の驚異が背中合わせになった土地の歴史から、そこに生きた人々の暮らしの選択を2人のAIホストが静かに紐解きます。</description>

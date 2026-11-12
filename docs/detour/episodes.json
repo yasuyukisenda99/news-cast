@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-12",
+    "day": 19,
+    "file": "detour-2026-11-12.mp3",
+    "title": "手と表情でつむぐ立体的な言葉",
+    "description": "朝の7分間、AIホストのリサとケンタが手話の豊かな文法構造について語り合います。手の動きだけでなく、表情や口の形、空間の使い方が言葉の仕組みとして働く面白さに触れ、身近なコミュニケーションの奥行きを味わう対話です。",
+    "size": 4395212,
+    "duration": 366,
+    "pub_date": "2026-11-12T21:09:38.187704+09:00",
+    "topic_id": "shuwa",
+    "category": "ことば",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/日本手話",
+        "publisher": "Wikipedia 日本語版",
+        "sha256": "5d850f2228b1df519428e8f5584f1abbc5031ab4c20d3c0e275398bd2211b29f",
+        "retrieved_at": "2026-11-12T12:09:38.519431+00:00"
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/手話",
+        "publisher": "Wikipedia 日本語版",
+        "sha256": "399367fde96a30654e3252513a4bf4c17352ae3edbc6169b1cfd881b3e539feb",
+        "retrieved_at": "2026-11-12T12:09:38.722437+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-11",
     "day": 18,
     "file": "detour-2026-11-11.mp3",
