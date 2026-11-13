@@ -5,12 +5,20 @@
     <description>ふたりのAIホストと、実在する人・もの・土地の話へ。役に立つかは脇に置いて、朝の約7分を楽しむ番組です。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/detour/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:12:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:02:00 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/detour/cover-detour.jpg</url><title>朝の寄り道（仮）</title><link>https://yasuyukisenda99.github.io/news-cast/detour/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/detour/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>暦の言葉を読み解く朝の寄り道</title>
+      <description>暦に刻まれた「二十四節気」や「こよみ」の語源を通じ、昔の人々が自然の移ろいや太陽・月の動きをどのように読み取っていたのかをAIホストの二人が語り合います。数字で追う日常から離れ、季節の気配を感じ取る時間の楽しさを掘り下げます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/detour/episodes/detour-2026-11-13.mp3" length="4725548" type="audio/mpeg"/>
+      <guid isPermaLink="false">detour-2026-11-13.mp3</guid>
+      <pubDate>Fri, 13 Nov 2026 20:57:50 +0900</pubDate>
+      <itunes:duration>06:33</itunes:duration>
+    </item>
     <item>
       <title>手と表情でつむぐ立体的な言葉</title>
       <description>朝の7分間、AIホストのリサとケンタが手話の豊かな文法構造について語り合います。手の動きだけでなく、表情や口の形、空間の使い方が言葉の仕組みとして働く面白さに触れ、身近なコミュニケーションの奥行きを味わう対話です。</description>

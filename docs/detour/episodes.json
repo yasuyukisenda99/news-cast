@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-11-13",
+    "day": 20,
+    "file": "detour-2026-11-13.mp3",
+    "title": "暦の言葉を読み解く朝の寄り道",
+    "description": "暦に刻まれた「二十四節気」や「こよみ」の語源を通じ、昔の人々が自然の移ろいや太陽・月の動きをどのように読み取っていたのかをAIホストの二人が語り合います。数字で追う日常から離れ、季節の気配を感じ取る時間の楽しさを掘り下げます。",
+    "size": 4725548,
+    "duration": 393,
+    "pub_date": "2026-11-13T20:57:50.773107+09:00",
+    "topic_id": "sekki",
+    "category": "暮らし",
+    "experiment_start": "2026-10-25",
+    "sources": [
+      {
+        "url": "https://ja.wikipedia.org/wiki/二十四節気",
+        "publisher": "Wikipedia 日本語版",
+        "sha256": "21b29a250b29cd2675ada0a0064f24a774a19aeb9cf48246fa1c56c747505e15",
+        "retrieved_at": "2026-11-13T11:57:51.019485+00:00"
+      },
+      {
+        "url": "https://ja.wikipedia.org/wiki/暦",
+        "publisher": "Wikipedia 日本語版",
+        "sha256": "cfb6419a9bc7009fccea8c5a7b258564dc271e66869820b1e35e66195d0c531a",
+        "retrieved_at": "2026-11-13T11:57:51.220583+00:00"
+      }
+    ]
+  },
+  {
     "date": "2026-11-12",
     "day": 19,
     "file": "detour-2026-11-12.mp3",
