@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Nov 2026 01:29:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 01:30:31 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年11月16日（Mon）：Nvidia激震とAI検索最適化（GEO）の台頭</title>
+      <description>Nvidiaを巡るジェンスン・ファン氏の電撃退任が世界のサプライチェーンに与える衝撃と、従来のSEOから移行が進むAI回答エンジン最適化（AEO/GEO）のビジネスインパクトを掘り下げます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-16.mp3" length="6756812" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-16.mp3</guid>
+      <pubDate>Mon, 16 Nov 2026 10:29:03 +0900</pubDate>
+      <itunes:duration>09:22</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年11月15日（Sun）ジェンスン・フアン氏辞任の波紋とAIエコシステムの地殻変動</title>
       <description>Nvidiaのジェンスン・フアンCEO退任が世界とスタートアップ投資に与える衝撃を深掘り。HubSpotの創業者復帰やLangChainの30億ドル評価など、AI産業の再編期を読み解きます。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-11-03.mp3</guid>
       <pubDate>Tue, 03 Nov 2026 12:11:14 +0900</pubDate>
       <itunes:duration>06:16</itunes:duration>
-    </item>
-    <item>
-      <title>2026年11月02日（Mon）朝のAI・業界ニュース便：AIエージェントが変える雇用の現場とSaaSモデルの転換点</title>
-      <description>AIエージェントの現場導入による雇用構造の変化やHubSpotの決算から見るSaaSビジネスの転換点、さらにOpenAIの資金調達動向やデータセンターをめぐる環境訴訟まで、研究とビジネスの両面から深く読み解きます。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-02.mp3" length="6317900" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-11-02.mp3</guid>
-      <pubDate>Mon, 02 Nov 2026 10:05:50 +0900</pubDate>
-      <itunes:duration>08:46</itunes:duration>
     </item>
   </channel>
 </rss>
