@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 01:30:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:17:50 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年11月17日（Tue）</title>
+      <description>カリフォルニア州によるOpenAI提訴が示す自律エージェントの法的責任と、Nvidiaの体制激変に揺れるAI業界の行方を読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-17.mp3" length="5853644" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-17.mp3</guid>
+      <pubDate>Tue, 17 Nov 2026 13:16:35 +0900</pubDate>
+      <itunes:duration>08:07</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年11月16日（Mon）：Nvidia激震とAI検索最適化（GEO）の台頭</title>
       <description>Nvidiaを巡るジェンスン・ファン氏の電撃退任が世界のサプライチェーンに与える衝撃と、従来のSEOから移行が進むAI回答エンジン最適化（AEO/GEO）のビジネスインパクトを掘り下げます。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-11-04.mp3</guid>
       <pubDate>Wed, 04 Nov 2026 22:54:44 +0900</pubDate>
       <itunes:duration>07:53</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年11月03日（Tue）: AIの自律進化とデータ権利の摩擦</title>
-      <description>Anthropicが警告するAIの「再帰的自己改善（RSI）」への接近と、NYTによるBrave提訴に見る学習データの権利・コスト問題を深掘り。Grokの利用制限や美容業界のGEO問題など最新ニュースを技術とビジネスの観点から解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-03.mp3" length="4518476" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-11-03.mp3</guid>
-      <pubDate>Tue, 03 Nov 2026 12:11:14 +0900</pubDate>
-      <itunes:duration>06:16</itunes:duration>
     </item>
   </channel>
 </rss>
