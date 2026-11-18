@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:17:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 03:15:08 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便（2026年11月18日（Wed））</title>
+      <description>OpenAIが発表した「ChatGPT for Sales」による営業現場の構造変化と、ジェンスン・フアン氏退任に伴い激震が走るNvidiaの動向、AnthropicのIPOを巡る巨大テックの思惑を読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-18.mp3" length="7163756" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-18.mp3</guid>
+      <pubDate>Wed, 18 Nov 2026 12:13:38 +0900</pubDate>
+      <itunes:duration>09:56</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 2026年11月17日（Tue）</title>
       <description>カリフォルニア州によるOpenAI提訴が示す自律エージェントの法的責任と、Nvidiaの体制激変に揺れるAI業界の行方を読み解きます。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-11-05.mp3</guid>
       <pubDate>Thu, 05 Nov 2026 11:01:12 +0900</pubDate>
       <itunes:duration>08:45</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便 2026年11月04日（Wed）</title>
-      <description>AI急増に伴うデータセンターの電力不足とジェットエンジン転用問題、そしてAnthropicが取り組むモデル身元証明システム「FlashProve」を中心に、AIインフラと信頼性の課題を議論します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-04.mp3" length="5683148" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-11-04.mp3</guid>
-      <pubDate>Wed, 04 Nov 2026 22:54:44 +0900</pubDate>
-      <itunes:duration>07:53</itunes:duration>
     </item>
   </channel>
 </rss>
