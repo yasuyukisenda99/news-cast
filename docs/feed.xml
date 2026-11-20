@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 02:59:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 02:48:57 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年11月20日（Fri）: デスクトップを動かすAIエージェントの光と影、そしてAnthropic歴史的IPO</title>
+      <description>GoogleやAppleによるOS操作型AIエージェントの台頭と顕在化する安全性の課題、さらにAnthropicのナスダック上場やNvidiaの経営体制刷新など、激動するAI業界の深層を読み解きます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-20.mp3" length="5216300" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-20.mp3</guid>
+      <pubDate>Fri, 20 Nov 2026 11:47:50 +0900</pubDate>
+      <itunes:duration>07:14</itunes:duration>
+    </item>
     <item>
       <title>2026年11月19日（Thu）ジェンスン・ファン電撃退任の波紋とAnthropic上場が示すAI新時代</title>
       <description>2026年11月19日、Nvidiaトップ交代を巡るイーロン・マスクら業界リーダーの反応や、評価額1.5兆ドルに達したAnthropicのIPO、マイクロソフトの構造改革まで、AI産業の激動を研究者と記者の視点で深掘りします。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-11-07.mp3</guid>
       <pubDate>Sat, 07 Nov 2026 10:22:42 +0900</pubDate>
       <itunes:duration>08:06</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便：2026年11月06日（Fri）OpenAIの2027年IPO観測と数学の形式検証</title>
-      <description>2026年11月6日の注目ニュースを解説。OpenAIの2027年IPO視野の背景にあるエンタープライズ戦略や、AIによる数学証明の検証を進めるAxiom Mathの取り組み、Dropboxのインフラ買収などを研究者とジャーナリストの視点で深掘りします。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-06.mp3" length="6455564" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-11-06.mp3</guid>
-      <pubDate>Fri, 06 Nov 2026 10:53:56 +0900</pubDate>
-      <itunes:duration>08:57</itunes:duration>
     </item>
   </channel>
 </rss>
