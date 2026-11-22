@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Sat, 21 Nov 2026 03:19:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 01:48:30 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便 2026年11月22日（Sun）: AI監視対抗と検索最適化の新局面</title>
+      <description>プライバシー保護を巡るSignalのスクリーンショット制限とAI監視への対抗策、そしてSEOから生成AI時代のAEO・GEOへの構造転換について、技術とビジネスの両面から掘り下げます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-22.mp3" length="5548940" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-22.mp3</guid>
+      <pubDate>Sun, 22 Nov 2026 10:47:16 +0900</pubDate>
+      <itunes:duration>07:42</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便 - 2026年11月21日（Sat）</title>
       <description>回答エンジン最適化（AEO/GEO）の倫理と操作リスクを深掘り。さらに数学の難問リーマン予想へのAIの挑戦、宇宙データセンターの資金調達課題まで解説します。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-11-09.mp3</guid>
       <pubDate>Mon, 09 Nov 2026 10:20:26 +0900</pubDate>
       <itunes:duration>08:34</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便：2026年11月08日（Sun）OpenAIの1.25兆ドル評価とデータセンターを取り巻く政治的逆風</title>
-      <description>OpenAIの110億ドル追加調達と1.25兆ドル評価額の報道、そして米中間選挙後に浮き彫りとなったデータセンター開発への逆風とGoogleの動きを深掘り。検索の地殻変動を示すGEO調査やSaaSの減速も解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-08.mp3" length="5888780" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-11-08.mp3</guid>
-      <pubDate>Sun, 08 Nov 2026 09:59:56 +0900</pubDate>
-      <itunes:duration>08:10</itunes:duration>
     </item>
   </channel>
 </rss>
