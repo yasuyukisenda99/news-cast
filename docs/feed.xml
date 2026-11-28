@@ -5,12 +5,20 @@
     <description>AI・HubSpot・デジタルマーケティングから電子部品・産業機器まで、仕事に役立つ最新ニュースをAIホスト2人が毎朝コンパクトにお届けします。</description>
     <link>https://yasuyukisenda99.github.io/news-cast/</link>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 04:01:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:38:27 +0000</lastBuildDate>
     <itunes:author>news-cast bot</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://yasuyukisenda99.github.io/news-cast/cover-news.jpg"/>
     <image><url>https://yasuyukisenda99.github.io/news-cast/cover-news.jpg</url><title>朝のAI・業界ニュース便</title><link>https://yasuyukisenda99.github.io/news-cast/</link></image>
     <atom:link href="https://yasuyukisenda99.github.io/news-cast/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>朝のAI・業界ニュース便：2026年11月28日（Sat）米対中規制と東南アジア供給停止、そして生成AI検索時代の新ビジネス</title>
+      <description>Nvidiaの東南アジア向けサーバー出荷一時停止が示唆する地政学リスクと、インドで台頭するGEO（生成エンジン最適化）や対話型AI広告の新潮流について、技術と産業の両面から深く掘り下げます。</description>
+      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-28.mp3" length="6097580" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-11-28.mp3</guid>
+      <pubDate>Sat, 28 Nov 2026 12:37:13 +0900</pubDate>
+      <itunes:duration>08:28</itunes:duration>
+    </item>
     <item>
       <title>朝のAI・業界ニュース便：2026年11月27日（Fri）「検索からAI最適化へ」購買行動の激変とGEOの台頭</title>
       <description>AIの推薦で購入を決める消費者が半数に達し、従来のSEOからGEO／AEOへの大転換が進んでいます。検索体験とマーケティングの変化、さらにNvidiaの地政学リスクやOpenAIの統合戦略まで、研究者と記者の視点で深掘りします。</description>
@@ -114,14 +122,6 @@
       <guid isPermaLink="false">2026-11-15.mp3</guid>
       <pubDate>Sun, 15 Nov 2026 10:28:29 +0900</pubDate>
       <itunes:duration>07:25</itunes:duration>
-    </item>
-    <item>
-      <title>朝のAI・業界ニュース便：2026年11月14日（Sat）—ジェンスン・ファン辞任の余波とAIエージェントの商業化</title>
-      <description>Nvidiaのジェンスン・ファン氏電撃辞任がAIエコシステムと地政学に与える激震を徹底分析。さらにLangChainの30億ドル評価やChatGPT Walletなど、自律型エージェントの社会実装動向を解説します。</description>
-      <enclosure url="https://yasuyukisenda99.github.io/news-cast/episodes/2026-11-14.mp3" length="7047692" type="audio/mpeg"/>
-      <guid isPermaLink="false">2026-11-14.mp3</guid>
-      <pubDate>Sat, 14 Nov 2026 10:58:38 +0900</pubDate>
-      <itunes:duration>09:47</itunes:duration>
     </item>
   </channel>
 </rss>
